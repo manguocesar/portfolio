@@ -175,7 +175,7 @@ export const projects: IProject[] = [
     image_path: "/images/projects/salmon.png",
     deployed_url: "https://salmon-store.vercel.app/",
     github_url: "https://github.com/manguocesar/salmon-store",
-    category: ["next", "react", "typescript", "tailwind", "headlessCMS"],
+    category: ["next", "react", "typescript", "tailwindcss", "headlessCMS"],
     description: "Salmon E-commerce",
     key_techs: ["Next", "Stripe", "TailwindCss", "SanityCMS"],
   },
