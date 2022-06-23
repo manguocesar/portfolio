@@ -22,4 +22,4 @@ export interface IProject {
   key_techs: string[];
 }
 
-export type Category = "react" | "react native" | "tailwindcss" | "node" | "express" | "mongo" | "next" | "typescript" | "antUI" |"materialUI" ;
+export type Category = "react" | "react native" | "tailwindcss" | "headlessCMS" | "node" | "express" | "mongo" | "next" | "typescript" | "antUI" |"materialUI" ;
