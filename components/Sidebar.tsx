@@ -1,5 +1,5 @@
 import { AiFillGithub, AiFillLinkedin, AiFillWechat } from "react-icons/ai";
-import { GiTie } from "react-icons/gi";
+import { GiTie, GiClick } from "react-icons/gi";
 import { GoLocation } from "react-icons/go";
 import { useTheme } from "next-themes";
 import Image from "next/image";
@@ -27,23 +27,22 @@ const Sidebar = () => {
       <h3 className="my-4 text-3xl font-medium tracking-wider font-kaushan">
         <span className="text-orange ">Cesar</span> 何赛
       </h3>
-      <p className="px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-dark-200 dark:bg-black-500">
+      <p className="flex items-center justify-center px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-dark-200 dark:bg-black-500">
         Web Developer
+      <GiTie className="w-6 h-6" />
       </p>
-      {/* Resume */}
       <a
         href="/assets/2022 CV César HERTZ.pdf"
         download="2022 CV César HERTZ.pdf"
         className="flex items-center justify-center px-2 py-1 my-2 bg-gray-200 rounded-full cursor-pointer dark:bg-dark-200 dark:bg-black-500"
       >
-        <GiTie className="w-6 h-6" />
         <span>Download Resume</span>
+        <GiClick className="w-4 h-4" />
       </a>
 
-      {/* Socials */}
-      <div className="flex justify-around w-9/12 mx-auto my-5 text-orange md:w-full ">
+      <div className="flex justify-around w-10/12 mx-auto my-4 text-orange md:w-full ">
         {wechat ?
-          <div onMouseOut={() => () => setWechat(false)} className="w-1/6 absolute">
+          <div className="w-3/12">
             <img alt="wechat-picture" src="/images/wechat.jpg" />
           </div> :
           <AiFillWechat className="w-8 h-8 cursor-pointer" onMouseOver={()=>setWechat(true)}  />}

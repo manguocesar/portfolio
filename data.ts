@@ -4,7 +4,6 @@ import { FaServer, FaBusinessTime } from "react-icons/fa";
 import { AiOutlineAntDesign } from "react-icons/ai";
 import { MdDeveloperMode } from "react-icons/md";
 import { IProject, Service, Skill } from "./types";
-
 import { BsCircleFill } from "react-icons/bs";
 
 export const services: Service[] = [
@@ -12,24 +11,24 @@ export const services: Service[] = [
     Icon: RiComputerLine,
     title: "Frontend Development",
     about:
-      "Creating efficient & user-friendly frontends with React & CSS frameworks ",
+      "Creating efficient & user-friendly frontends with <b>React</b> & <b>CSS</b> frameworks ",
   },
   {
     Icon: FaServer,
     title: "Backend Development",
     about:
-      "Create REST APIs & databases using Express & MongoDB",
+      "Create REST APIs & databases using <b>Express</b> & <b>MongoDB</b>",
   },
   {
     Icon: FaBusinessTime,
     title: "Business skills",
     about:
-      "Experience with sales, HR & management assignments",
+      "Experience with <b>sales</b>, <b>HR</b> & <b>management</b> assignments",
   },
   {
     Icon: MdDeveloperMode,
     title: "Freelance Coder",
-    about: "Hourly rate &/or scope based",
+    about: "<b>Hourly rate</b> &/or <b>scope based</b>",
   },
   {
     Icon: AiOutlineAntDesign,
@@ -41,7 +40,7 @@ export const services: Service[] = [
     Icon: BiWorld,
     title: "International",
     about:
-      "English, French, Chinese & Spanish communication skills",
+      "<b>English</b>, <b>French</b>, <b>Chinese</b> & <b>Spanish</b> working communication",
   },
 ];
 

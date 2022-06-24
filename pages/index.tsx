@@ -14,10 +14,10 @@ const About: NextPage = () => {
   return (
     <div className="flex flex-col flex-grow px-6 pt-1 ">
       <h6 className="my-3 text-base font-medium">
-        After 4 years between Europe &amp; China in the web industry,
+        After  <strong>4 years between Europe</strong> &amp;  <strong>China</strong> in the web industry,
         I wish to take on agile, innovative &amp; ambitious projects.
         A to Z tech projects with close user involvement are the most fulfilling.
-        Through a dozen MERN stack projects, I have contributed to different
+        Through a <strong>dozen MERN stack</strong> projects, I have contributed to different
         architectures, designs and methods. I wish to focus on projects that
         have a positive impact and great growth potential.
       </h6>
