@@ -14,7 +14,7 @@ const About: NextPage = () => {
   return (
     <div className="flex flex-col flex-grow px-6 pt-1 ">
       <h6 className="my-3 text-base font-medium">
-        After  <strong>4 years between Europe</strong> &amp;  <strong>China</strong> in the web industry,
+        After  <strong>6 years between Europe</strong> &amp;  <strong>China</strong> in the web industry,
         I wish to take on agile, innovative &amp; ambitious projects.
         A to Z tech projects with close user involvement are the most fulfilling.
         Through a <strong>dozen MERN stack</strong> projects, I have contributed to different

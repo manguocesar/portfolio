@@ -32,8 +32,8 @@ const Sidebar = () => {
       <GiTie className="w-6 h-6" />
       </p>
       <a
-        href="/assets/2022 CV César HERTZ.pdf"
-        download="2022 CV César HERTZ.pdf"
+        href="/assets/2025 CV Cesar HERTZ Software.pdf"
+        download="2025 CV Cesar HERTZ Software.pdf"
         className="flex items-center justify-center px-2 py-1 my-2 bg-gray-200 rounded-full cursor-pointer dark:bg-dark-200 dark:bg-black-500"
       >
         <span>Download Resume</span>
@@ -60,11 +60,10 @@ const Sidebar = () => {
         style={{ marginLeft: "-1rem", marginRight: "-1rem" }}
       >
         <div className="flex items-center justify-center">
-          <GoLocation className="mr-2" /> <span>Lyon &amp; Shanghai </span>
+          <GoLocation className="mr-2" /> <span>Copenhagen </span>
         </div>
         <p className="my-2 ">cesar.hertz@icloud.com</p>
-        <p className="my-2">+33 6 78 95 22 65</p>
-        <p className="my-2">+86 183 2148 1045</p>
+        <p className="my-2">+45 31 80 92 75</p>
       </div>
 
       {/* Email Button */}
@@ -80,7 +79,7 @@ const Sidebar = () => {
         className="w-8/12 px-5 py-2 my-4 text-white bg-black rounded-full cursor-pointer bg-gradient-to-tr from-blue-800 to-orange focus:outline-none hover:scale-105 "
       >
         {/* //TODO remove bg black */}
-        Toggle Theme
+        Day / Night Theme
       </button>
     </>
   );
