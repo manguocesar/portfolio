@@ -19,11 +19,11 @@ const Resume = () => {
           </div>
         </div>
         <div>
-          <h5 className="my-3 text-2xl font-bold">Freelance Developer</h5>
+          <h5 className="my-3 text-2xl font-bold">Software Developer</h5>
           <div className="">
            
-            <p className="my-3 text-sm">Lucky to work with the latest technologies and talented engineers.
-             The digital communities in Shanghai and Brussels have opened the door to the latest
+            <p className="my-3 text-sm">Lucky to work with cutting edge technologies and talented engineers.
+             The digital communities in Copenhagen, Lyon, Shanghai and Brussels have opened the door to the latest
               technology and innovation and inspired me to work with like-minded entrepreneurs.</p>
           </div>
         </div>

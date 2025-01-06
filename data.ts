@@ -11,13 +11,13 @@ export const services: Service[] = [
     Icon: RiComputerLine,
     title: "Frontend Development",
     about:
-      "Creating efficient & user-friendly frontends with <b>React</b> & <b>CSS</b> frameworks ",
+      "Creating efficient & user-friendly frontends with <b>ReactJS</b> & <b>CSS</b> frameworks ",
   },
   {
     Icon: FaServer,
     title: "Backend Development",
     about:
-      "Create REST APIs & databases using <b>Express</b> & <b>MongoDB</b>",
+      "Create REST APIs & databases using <b>ExpressJS</b> & <b>MongoDB</b>",
   },
   {
     Icon: FaBusinessTime,
@@ -53,7 +53,7 @@ export const languages: Skill[] = [
   {
     Icon: BsCircleFill,
     name: "React Native",
-    level: "60",
+    level: "75",
   },
   {
     Icon: BsCircleFill,
