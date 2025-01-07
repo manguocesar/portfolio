@@ -138,6 +138,15 @@ export const projects: IProject[] = [
     category: ["react native", "typescript", "graphQL"],
     key_techs: ["React Native", "Material UI"],
   },
+  { 
+    name: "Pola",
+    description:  "Massage music app",
+    image_path: "/images/projects/pola.jpg",
+    deployed_url: "",
+    github_url: "https://github.com/balconia/mobileApp",
+    category: ["react native", "expo"],
+    key_techs: ["React Native", "expo"],
+  },
   {
     name: "Chipedin",
     description: "Peer-to-peer crowd-gifting service",

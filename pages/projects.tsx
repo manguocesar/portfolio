@@ -29,9 +29,9 @@ const Projects = () => {
         active={active}
       />
 
-      <div className="relative grid grid-cols-12 gap-4 my-3">
+      <div className="relative grid grid-cols-12 gap-5 my-3 items-center">
         {projects.map((project) => (
-          <div className="col-span-12 p-2 bg-gray-200 rounded-lg sm:col-span-6 lg:col-span-4 dark:bg-dark-200">
+          <div className="col-span-12 h-full flex justify-center items-center p-2 bg-gray-200 rounded-lg sm:col-span-6 lg:col-span-4 dark:bg-dark-200">
             <ProjectCard project={project} key={project.name} />
           </div>
         ))}
