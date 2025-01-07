@@ -118,7 +118,7 @@ export const projects: IProject[] = [
     deployed_url: "",
     github_url: "https://github.com/manguocesar/portfolio",
     category: ["react", "typescript", "next", "tailwindcss"],
-    key_techs: ["Next", "Typescript", "Tailwindcss"],
+    key_techs: ["Next", "Typescript", "Tailwindcss", "i18next"],
   },
   { 
     name: "Redilink",
@@ -129,13 +129,22 @@ export const projects: IProject[] = [
     category: ["react native", "express", "headlessCMS"],
     key_techs: ["React Native", "React Admin", "Express", "Material UI"],
   },
+  { 
+    name: "Meldd",
+    description:  "Consensus & research mobile app",
+    image_path: "/images/projects/meldd.png",
+    deployed_url: "https://apps.apple.com/fr/app/meldd/id6444099763",
+    github_url: "https://github.com/TheProlog/meldd_mono",
+    category: ["react native", "typescript", "graphQL"],
+    key_techs: ["React Native", "Material UI"],
+  },
   {
     name: "Chipedin",
     description: "Peer-to-peer crowd-gifting service",
     image_path: "/images/projects/chipedin.png",
     deployed_url: "https://chipedin.com/",
     github_url: "https://github.com/Chipedin/next_app",
-    category: ["next", "tailwindcss"],
+    category: ["next", "tailwindcss" ],
     key_techs: ["Next", "Tailwindcss", "Framer Motion"],
   },
   {
@@ -158,7 +167,7 @@ export const projects: IProject[] = [
     github_url: "https://github.com",
     category: ["next", "react", "tailwindcss", "typescript"],
     description: "Online language learning platform",
-    key_techs: ["React", "Next", "Typescript", "TailwindCss"],
+    key_techs: ["React", "Next", "Typescript", "TailwindCss", "i18next"],
   },
   {
     name: "Storever",
@@ -167,7 +176,7 @@ export const projects: IProject[] = [
     github_url: "https://github.com/Storever-Player-Music-China",
     category: ["react", "materialUI", "typescript", "express"],
     description: "In-store online music player",
-    key_techs: ["React", "Next", "Typescript", "TailwindCss"],
+    key_techs: ["React", "Next", "Typescript", "TailwindCss", "i18next"],
   },
   {
     name: "Salmon Store",
@@ -177,5 +186,14 @@ export const projects: IProject[] = [
     category: ["next", "react", "typescript", "tailwindcss", "headlessCMS"],
     description: "Salmon E-commerce",
     key_techs: ["Next", "Stripe", "TailwindCss", "SanityCMS"],
+  },
+  {
+    name: "French House",
+    image_path: "/images/projects/frenchHouse.webp",
+    deployed_url: "https://frenchhouse.cn/",
+    github_url: "https://github.com/manguocesar/FrenchHouse",
+    category: ["next", "react", "typescript", "tailwindcss", "headlessCMS"],
+    description: "Interior design portfolio",
+    key_techs: ["Next", "typescript", "TailwindCss", "i18next"],
   },
 ];
