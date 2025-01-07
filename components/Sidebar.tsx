@@ -19,8 +19,8 @@ const Sidebar = () => {
         src="/images/cesar.png"
         alt="cesar hertz"
         className=" mx-auto border rounded-full "
-        height="170px"
-        width="128px"
+        height={170}
+        width={128}
         layout="intrinsic"
         quality="100"
       />
