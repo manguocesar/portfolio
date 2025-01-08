@@ -29,7 +29,7 @@ const Resume = () => {
            
             <p className="my-3 text-sm">Lucky to work with cutting edge technologies and talented engineers.
              The digital communities in Copenhagen, Lyon, Shanghai and Brussels have opened the door to the latest
-              technology and innovation and inspired me to work with like-minded entrepreneurs.</p>
+              technologies & innovations, inspiring me to work with like-minded entrepreneurs.</p>
           </div>
         </div>
       </div>

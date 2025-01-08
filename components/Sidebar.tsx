@@ -18,7 +18,8 @@ const Sidebar = () => {
     <motion.div
     initial={{ y: -20, opacity: 0 }}
     animate={{ y: 0, opacity: 1 }}
-    transition={{ ease: "easeInOut", duration: 0.75 }}>
+    transition={{ ease: "easeInOut", duration: 0.75 }}
+    >
       <Image
         src="/images/cesar.png"
         alt="cesar hertz"
@@ -49,7 +50,7 @@ const Sidebar = () => {
           <div className="w-3/12">
             <img alt="wechat-picture" src="/images/wechat.jpg" />
           </div> :
-          <AiFillWechat className="w-8 h-8 cursor-pointer" onMouseOver={()=>setWechat(true)}  />}
+          <AiFillWechat className="w-8 h-8 cursor-pointer" onClick={()=>setWechat(true)}  />}
         <a href="https://www.linkedin.com/in/hertz-cesar/" >
           <AiFillLinkedin className="w-8 h-8 cursor-pointer" />
         </a>
@@ -60,7 +61,9 @@ const Sidebar = () => {
 
       {/* Contacts */}
       <div
-        className="py-4 my-5 bg-gray-200 dark:bg-dark-200 dark:bg-black-500"
+        className="py-4 my-5 bg-gray-200 dark:bg-dark-200
+        
+        dark:bg-black-500"
         style={{ marginLeft: "-1rem", marginRight: "-1rem" }}
       >
         <div className="flex items-center justify-center">
@@ -72,19 +75,27 @@ const Sidebar = () => {
 
       {/* Email Button */}
 
-      <button
+      <motion.button
+      whileHover={{
+        scale: 1.04,
+        transition: { duration: 0.3 },
+      }}
         className="w-8/12 px-5 py-2 text-white bg-black rounded-full cursor-pointer bg-gradient-to-tr from-blue-800 to-orange hover:scale-105 focus:outline-none"
         onClick={() => window.open("cesar.hertz@icloud.com")}
       >
         Email me
-      </button>
-      <button
+      </motion.button>
+      <motion.button
+       whileHover={{
+        scale: 1.04,
+        transition: { duration: 0.3 },
+      }}
         onClick={changeTheme}
         className="w-8/12 px-5 py-2 my-4 text-white bg-black rounded-full cursor-pointer bg-gradient-to-tr from-blue-800 to-orange focus:outline-none hover:scale-105 "
       >
         {/* //TODO remove bg black */}
         Day / Night Theme
-      </button>
+      </motion.button>
     </motion.div>
   );
 };

@@ -14,10 +14,10 @@ const About: NextPage = () => {
 
   return (
     <motion.div
-    initial={{ y: 20, opacity: 0 }}
-    animate={{ y: 0, opacity: 1 }}
-    transition={{ ease: "easeInOut", duration: 0.75 }}
-     className="flex flex-col flex-grow px-6 pt-1 ">
+      initial={{ y: 20, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ ease: "easeInOut", duration: 0.75 }}
+      className="flex flex-col flex-grow px-6 pt-1 ">
       <h6 className="my-3 text-base font-medium">
         After  <strong>6 years between Europe</strong> &amp;  <strong>China</strong> in the web industry,
         I wish to take on agile, innovative &amp; ambitious projects.
@@ -37,12 +37,17 @@ const About: NextPage = () => {
         <div className="grid gap-6 my-3 md:grid-cols-2">
           {/* children's initial and animate property should be same as the parent during a stagger effect  */}
           {services.map((service) => (
-            <div
+            <motion.div
+            whileHover={{
+              scale: 1.02,
+              transition: { duration: 0.3 },
+            }}
+            whileTap={{ scale: 0.97 }}
               className="col-span-2 p-2 bg-gray-200 rounded-lg dark:bg-dark-200 md:col-span-1 "
               key={service.title}
             >
               <ServiceCard service={service} />
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
