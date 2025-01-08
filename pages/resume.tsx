@@ -1,9 +1,14 @@
 import Bar from "../components/Bar";
 import { languages, tools } from "../data";
+import { motion } from "framer-motion";
+
 
 const Resume = () => {
   return (
-    <div className="px-6 py-2">
+    <motion.div
+    initial={{ y: -20, opacity: 0 }}
+    animate={{ y: 0, opacity: 1 }}
+    transition={{ ease: "easeInOut", duration: 0.75 }} className="px-6 py-2">
       {/* //! Education & Experience */}
       <div className="grid gap-6 md:grid-cols-2">
         <div>
@@ -49,7 +54,7 @@ const Resume = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

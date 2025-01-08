@@ -8,11 +8,16 @@ import {
 import ServiceCard from "../components/ServiceCard";
 import { services } from "../data";
 import { Service } from "../types";
+import { motion } from "framer-motion";
 
 const About: NextPage = () => {
 
   return (
-    <div className="flex flex-col flex-grow px-6 pt-1 ">
+    <motion.div
+    initial={{ y: 20, opacity: 0 }}
+    animate={{ y: 0, opacity: 1 }}
+    transition={{ ease: "easeInOut", duration: 0.75 }}
+     className="flex flex-col flex-grow px-6 pt-1 ">
       <h6 className="my-3 text-base font-medium">
         After  <strong>6 years between Europe</strong> &amp;  <strong>China</strong> in the web industry,
         I wish to take on agile, innovative &amp; ambitious projects.
@@ -41,7 +46,7 @@ const About: NextPage = () => {
           ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

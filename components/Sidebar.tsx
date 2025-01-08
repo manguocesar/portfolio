@@ -4,6 +4,7 @@ import { GoLocation } from "react-icons/go";
 import { useTheme } from "next-themes";
 import Image from "next/image";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 const Sidebar = () => {
   const { theme, setTheme } = useTheme();
@@ -14,7 +15,10 @@ const Sidebar = () => {
   };
 
   return (
-    <>
+    <motion.div
+    initial={{ y: -20, opacity: 0 }}
+    animate={{ y: 0, opacity: 1 }}
+    transition={{ ease: "easeInOut", duration: 0.75 }}>
       <Image
         src="/images/cesar.png"
         alt="cesar hertz"
@@ -81,7 +85,7 @@ const Sidebar = () => {
         {/* //TODO remove bg black */}
         Day / Night Theme
       </button>
-    </>
+    </motion.div>
   );
 };
 

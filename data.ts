@@ -112,15 +112,6 @@ export const tools: Skill[] = [
 
 export const projects: IProject[] = [
   { 
-    name: "Cesar's Portfolio",
-    description:  "Introducing myself with the tech I love",
-    image_path: "/images/projects/portfolio.png",
-    deployed_url: "",
-    github_url: "https://github.com/manguocesar/portfolio",
-    category: ["react", "typescript", "next", "tailwindcss"],
-    key_techs: ["Next", "Typescript", "Tailwindcss", "i18next"],
-  },
-  { 
     name: "Redilink",
     description:  "Social network for real estate professionals",
     image_path: "/images/projects/redilink.png",
@@ -136,7 +127,16 @@ export const projects: IProject[] = [
     deployed_url: "https://apps.apple.com/fr/app/meldd/id6444099763",
     github_url: "https://github.com/TheProlog/meldd_mono",
     category: ["react native", "typescript", "graphQL"],
-    key_techs: ["React Native", "Material UI"],
+    key_techs: ["React Native", "expo", "Material UI", "graphQL", "i18next"],
+  },
+  { 
+    name: "Cesar's Portfolio",
+    description:  "Introducing myself with the tech I love",
+    image_path: "/images/projects/portfolio.png",
+    deployed_url: "",
+    github_url: "https://github.com/manguocesar/portfolio",
+    category: ["react", "typescript", "next", "tailwindcss"],
+    key_techs: ["Next", "Typescript", "Tailwindcss", "i18next", "Framer Motion"],
   },
   { 
     name: "Pola",
