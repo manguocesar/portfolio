@@ -30,7 +30,7 @@ const ProjectCard: FunctionComponent<{
       <Image
         src={image_path}
         alt={name}
-        className="cursor-pointer"
+        className="cursor-pointer rounded-md"
         onClick={() => setShowDetail(true)}
         height="150"
         width="300"
@@ -43,7 +43,7 @@ const ProjectCard: FunctionComponent<{
             <Image
               src={image_path}
               alt={name}
-              layout="responsive"
+              className="rounded-md"
               height="150"
               width="300"
             />
