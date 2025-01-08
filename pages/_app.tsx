@@ -4,10 +4,15 @@ import "../styles/globals.css";
 
 import { ThemeProvider } from "next-themes";
 import { motion } from "framer-motion";
+import { ComponentProps, ReactNode } from 'react'
+
+type ExistingThemeProviderProps = ComponentProps<typeof ThemeProvider> & {children: ReactNode};
+const ThemeProviderExtended = (props: ExistingThemeProviderProps) => <ThemeProvider {...props}/>
 
 function MyApp({ Component, pageProps }) {
+
   return (
-    <ThemeProvider attribute="class">
+    <ThemeProviderExtended attribute="class">
       <motion.div
       initial={{ y: 20, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
@@ -22,7 +27,7 @@ function MyApp({ Component, pageProps }) {
           <Component {...pageProps} />
         </div>
       </motion.div>
-    </ThemeProvider>
+    </ThemeProviderExtended>
   );
 }
 
