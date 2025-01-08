@@ -1,6 +1,7 @@
 import { useState, useEffect, FunctionComponent } from 'react'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
+import { motion } from "framer-motion";
 
 const NavItem: FunctionComponent<{
    active: string
@@ -34,7 +35,10 @@ const Navbar = () => {
    }, [])
 
    return (
-      <div className='flex items-center justify-between px-5 py-3 my-3'>
+      <motion.div
+      initial={{ x: 20, opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
+      transition={{ ease: "easeInOut", duration: 0.75 }} className='flex items-center justify-between px-5 py-3 my-3'>
          <span className='text-xl font-bold border-b-4 md:text-2xl border-orange'>
             {active}
          </span>
@@ -59,7 +63,7 @@ const Navbar = () => {
                route='/projects'
             />
          </div>
-      </div>
+      </motion.div>
    )
 }
 

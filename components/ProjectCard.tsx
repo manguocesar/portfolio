@@ -2,6 +2,8 @@ import { FunctionComponent, useState } from "react";
 import { AiFillGithub, AiFillProject } from "react-icons/ai";
 import { MdClose } from "react-icons/md";
 import { IProject } from "../types";
+import { motion } from "framer-motion";
+
 
 import Image from "next/image";
 
@@ -21,7 +23,10 @@ const ProjectCard: FunctionComponent<{
   const [showDetail, setShowDetail] = useState(false);
 
   return (
-    <div>
+    <motion.div
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ ease: "easeInOut", duration: 0.75 }}>
       <Image
         src={image_path}
         alt={name}
@@ -82,7 +87,7 @@ const ProjectCard: FunctionComponent<{
           </button>
         </div>
       )}
-    </div>
+    </motion.div>
   );
 };
 
