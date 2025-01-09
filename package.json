@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "test": "playwright test"
   },
   "dependencies": {
     "framer-motion": "^11.16.0",
@@ -16,6 +17,7 @@
     "react-icons": "^4.1.0"
   },
   "devDependencies": {
+    "@playwright/test": "^1.49.1",
     "@types/node": "^14.14.22",
     "@types/react": "19.0.3",
     "autoprefixer": "^10.2.4",

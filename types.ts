@@ -1,4 +1,3 @@
-import { FunctionComponent } from "react";
 import { IconType } from "react-icons";
 export interface Service {
   Icon: IconType;
@@ -12,7 +11,7 @@ export interface Skill {
   level: string;
 }
 
-export interface IProject {
+export interface Project {
   name: string;
   description: string;
   image_path: string;
