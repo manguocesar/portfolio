@@ -2,8 +2,16 @@ import Bar from "../components/Bar";
 import { languages, tools } from "../data";
 import { motion } from "framer-motion";
 
+export async function getServerSideProps() {
+  const data = await fetch(`${process.env.NEXT_URL}api/hello`);
+  const posts = await data.json();
 
-const Resume = () => {
+  return { props: { posts } };
+}
+
+
+const Resume = ({posts}) => {
+  
   return (
     <motion.div
     initial={{ y: -20, opacity: 0 }}
