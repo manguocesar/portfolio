@@ -1,14 +1,14 @@
 import { FunctionComponent, useState } from "react";
 import { AiFillGithub, AiFillProject } from "react-icons/ai";
 import { MdClose } from "react-icons/md";
-import { IProject } from "../types";
+import { Project } from "../types";
 import { motion } from "framer-motion";
 
 
 import Image from "next/image";
 
 const ProjectCard: FunctionComponent<{
-  project: IProject;
+  project: Project;
 }> = ({
   project: {
     name,
