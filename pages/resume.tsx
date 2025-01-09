@@ -3,7 +3,10 @@ import { languages, tools } from "../data";
 import { motion } from "framer-motion";
 
 export async function getServerSideProps() {
-  const data = await fetch(`${process.env.NEXT_URL}api/hello`);
+
+  const urlBase = process.env.NEXT_URL ? process.env.NEXT_URL : "www.cesarhertz.com/";
+
+  const data = await fetch(`${urlBase}api/hello`);
   const posts = await data.json();
 
   return { props: { posts } };
