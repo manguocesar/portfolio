@@ -20,7 +20,7 @@ const Resume = ({posts}) => {
       {/* //! Education & Experience */}
       <div className="grid gap-6 md:grid-cols-2">
         <div>
-          <h5 className="my-3 text-2xl font-bold">Education</h5>
+          <h5 className="my-3 text-2xl font-bold">Education: {posts.text}</h5>
           <div className="">
             <h5 className="my-2 text-xl font-bold">
             Master of Entrepreneurship &amp; Development
