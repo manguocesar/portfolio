@@ -2,19 +2,21 @@ import Bar from "../components/Bar";
 import { languages, tools } from "../data";
 import { motion } from "framer-motion";
 
-export async function getServerSideProps() {
+// export async function getServerSideProps() {
 
-  const urlBase = process.env.NEXT_URL ? process.env.NEXT_URL : "www.cesarhertz.com/";
+//   const urlBase = process.env.NEXT_URL ? process.env.NEXT_URL : "www.cesarhertz.com/";
 
-  const data = await fetch(`${urlBase}api/hello`);
-  const posts = await data.json();
+//   const data = await fetch(`${urlBase}api/hello`);
+//   const posts = await data.json();
 
-  return { props: { posts } };
-}
+//   return { props: { posts } };
+// }
 
 
-const Resume = ({posts}) => {
-  console.log("posts", posts);
+const Resume = (
+  // {posts}
+) => {
+  // console.log("posts", posts);
   
   return (
     <motion.div
