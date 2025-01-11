@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "test": "playwright test",
-    "cy:open": "cypress open"
+    "cypress:open": "cypress open",
+  "cypress:run": "cypress run"
   },
   "dependencies": {
     "framer-motion": "^11.16.0",
