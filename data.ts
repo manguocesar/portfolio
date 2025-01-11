@@ -85,6 +85,11 @@ export const languages: Skill[] = [
     name: "MongoDB",
     level: "60",
   },
+  {
+    Icon: BsCircleFill,
+    name: "ReactThreeFiber",
+    level: "50",
+  },
 ];
 
 export const tools: Skill[] = [
@@ -102,6 +107,16 @@ export const tools: Skill[] = [
     Icon: BsCircleFill,
     name: "AWS",
     level: "60",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "Expo",
+    level: "70",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "Cypress",
+    level: "50",
   },
   {
     Icon: BsCircleFill,
