@@ -8,12 +8,15 @@
     "start": "next start",
     "test": "playwright test",
     "cypress:open": "cypress open",
-  "cypress:run": "cypress run"
+    "cypress:run": "cypress run"
   },
   "dependencies": {
+    "dotenv": "^16.4.7",
     "framer-motion": "^11.16.0",
+    "mongoose": "^8.9.4",
     "next": "15.1.4",
     "next-themes": "0.0.10",
+    "pg": "^8.13.1",
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "react-icons": "^4.1.0"
