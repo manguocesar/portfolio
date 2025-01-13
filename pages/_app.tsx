@@ -1,10 +1,11 @@
-import Navbar from "../components/Navbar";
-import Sidebar from "../components/Sidebar";
+const Navbar = lazy(() => import ("../components/Navbar"));
+const Sidebar = lazy(() => import ("../components/Sidebar"));
+
 import "../styles/globals.css";
 
 import { ThemeProvider } from "next-themes";
 import { motion } from "framer-motion";
-import { ComponentProps, ReactNode} from 'react'
+import { ComponentProps, lazy, ReactNode} from 'react'
 
 type ExistingThemeProviderProps = ComponentProps<typeof ThemeProvider> & {children: ReactNode};
 const ThemeProviderExtended = (props: ExistingThemeProviderProps) => <ThemeProvider {...props}/>

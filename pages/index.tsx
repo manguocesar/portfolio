@@ -5,10 +5,11 @@ import {
   GetStaticPropsContext,
   NextPage,
 } from "next";
-import ServiceCard from "../components/ServiceCard";
+const ServiceCard = lazy(() => import ("../components/ServiceCard"));
 import { services } from "../data";
 import { Service } from "../types";
 import { motion } from "framer-motion";
+import { lazy } from "react";
 
 const About: NextPage = () => {
 

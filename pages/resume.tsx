@@ -1,4 +1,5 @@
-import Bar from "../components/Bar";
+import { lazy } from "react";
+const Bar = lazy(() => import ("../components/Bar"));
 import { languages, tools } from "../data";
 import { motion } from "framer-motion";
 
