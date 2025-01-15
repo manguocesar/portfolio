@@ -4,7 +4,6 @@ import { Service } from '../types'
 const ServiceCard: FunctionComponent<{ service: Service }> = ({
    service: { Icon, title, about },
 }) => {
-   //XSS attack :( on our portfolio btw, as an alternate use npm i dom purify
    function createMarkup() {
       return {
          __html: about,
