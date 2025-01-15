@@ -4,7 +4,6 @@ import { MdClose } from "react-icons/md";
 import { Project } from "../types";
 import { motion } from "framer-motion";
 
-
 import Image from "next/image";
 
 const ProjectCard: FunctionComponent<{

@@ -5,7 +5,7 @@ import {
   GetStaticPropsContext,
   NextPage,
 } from "next";
-const ServiceCard = lazy(() => import ("../components/ServiceCard"));
+const ServiceCard = lazy(() => import("../components/ServiceCard"));
 import { services } from "../data";
 import { Service } from "../types";
 import { motion } from "framer-motion";
@@ -36,14 +36,13 @@ const About: NextPage = () => {
         </h4>
 
         <div className="grid gap-6 my-3 md:grid-cols-2">
-          {/* children's initial and animate property should be same as the parent during a stagger effect  */}
           {services.map((service) => (
             <motion.div
-            whileHover={{
-              scale: 1.02,
-              transition: { duration: 0.3 },
-            }}
-            whileTap={{ scale: 0.97 }}
+              whileHover={{
+                scale: 1.02,
+                transition: { duration: 0.3 },
+              }}
+              whileTap={{ scale: 0.97 }}
               className="col-span-2 p-2 bg-gray-200 rounded-lg dark:bg-dark-200 md:col-span-1 "
               key={service.title}
             >
