@@ -55,11 +55,11 @@ export const languages: Skill[] = [
     name: "React Native",
     level: "75",
   },
-  {
-    Icon: BsCircleFill,
-    name: "Vue",
-    level: "50",
-  },
+  // {
+  //   Icon: BsCircleFill,
+  //   name: "Vue",
+  //   level: "50",
+  // },
   {
     Icon: BsCircleFill,
     name: "Typescript",
