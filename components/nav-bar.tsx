@@ -5,23 +5,30 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { FunctionComponent, useEffect, useState } from 'react';
 
-const NavItem: FunctionComponent<{
+type NavbarProps = {
   active: string;
-  setActive: Function;
+  setActive: (name: string) => void;
   name: string;
   route: string;
-}> = ({ active, setActive, name, route }) => {
-  return active === name ? undefined : (
-    <Link href={route} data-test-id={`cypress-nav-${name}`}>
-      <span
-        className="mx-2 cursor-pointer hover:border-b-4 hover:text-orange"
-        onClick={() => setActive(name)}
-      >
-        {name}
-      </span>
-    </Link>
-  );
 };
+
+const NavItem = ({ active, setActive, name, route }: NavbarProps) => {
+  return (
+    <>
+      {active === name ? undefined : (
+        <Link href={route} data-test-id={`cypress-nav-${name}`}>
+          <span
+            className="mx-2 cursor-pointer hover:border-b-4 hover:text-orange"
+            onClick={() => setActive(name)}
+          >
+            {name}
+          </span>
+        </Link>)
+      }
+    </>
+  )
+}
+
 
 const Navbar = () => {
   const pathname = usePathname();

@@ -4,28 +4,28 @@ import '../styles/globals.css';
 import { motion } from 'framer-motion';
 import { lazy } from 'react';
 
-import Navbar from '../components/nnavbar';
-import Sidebar from '../components/ssidebar';
+import Navbar from '../components/nav-bar';
+import Sidebar from '../components/side-bar';
 import { services } from '../data';
 
 export default function Index() {
   return (
-    <motion.div
-      initial={{ y: 20, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ ease: 'easeInOut', duration: 0.75 }}
-      className="my-14 grid grid-cols-12 gap-6 px-5 sm:px-20 md:mb-16 md:px-32 lg:mb-0 lg:px-36 xl:px-48"
-    >
-      <motion.div
-        initial={{ y: -20, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ ease: 'easeInOut', duration: 0.75 }}
-        className="col-span-12 h-full rounded-2xl border bg-white p-4 text-center text-base shadow-custom-light dark:border-orange dark:bg-dark-500 dark:shadow-custom-dark lg:col-span-3"
-      >
-        <Sidebar />
-      </motion.div>
-      <div className="col-span-12 flex flex-col overflow-hidden rounded-2xl border bg-white shadow-custom-light dark:border-orange dark:bg-dark-500 dark:shadow-custom-dark lg:col-span-9">
-        <Navbar />
+    // <motion.div
+    //   initial={{ y: 20, opacity: 0 }}
+    //   animate={{ y: 0, opacity: 1 }}
+    //   transition={{ ease: 'easeInOut', duration: 0.75 }}
+    //   className="my-14 grid grid-cols-12 gap-6 px-5 sm:px-20 md:mb-16 md:px-32 lg:mb-0 lg:px-36 xl:px-48"
+    // >
+    //   <motion.div
+    //     initial={{ y: -20, opacity: 0 }}
+    //     animate={{ y: 0, opacity: 1 }}
+    //     transition={{ ease: 'easeInOut', duration: 0.75 }}
+    //     className="col-span-12 h-full rounded-2xl border bg-white p-4 text-center text-base shadow-custom-light dark:border-orange dark:bg-dark-500 dark:shadow-custom-dark lg:col-span-3"
+    //   >
+    //     <Sidebar />
+    //   </motion.div>
+      // <div className="col-span-12 flex flex-col overflow-hidden rounded-2xl border bg-white shadow-custom-light dark:border-orange dark:bg-dark-500 dark:shadow-custom-dark lg:col-span-9">
+      //   <Navbar />
         <motion.div
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -48,7 +48,6 @@ export default function Index() {
             <h4 className="my-3 text-xl font-semibold tracking-wide">
               What I am doing
             </h4>
-
             <div className="my-3 grid gap-6 md:grid-cols-2">
               {services.map(service => (
                 <motion.div
@@ -66,7 +65,7 @@ export default function Index() {
             </div>
           </div>
         </motion.div>
-      </div>
-    </motion.div>
+      // </div>
+    // </motion.div> 
   );
 }
