@@ -17,6 +17,11 @@
     "lint:fix": "next lint --fix",
     "prepare": "husky install"
   },
+  "config": {
+  "commitizen": {
+    "path": "cz-conventional-changelog"
+  }
+},
   "dependencies": {
     "dotenv": "^16.4.7",
     "eslint-config-next": "^15.1.4",
