@@ -23,16 +23,21 @@
     }
   },
   "dependencies": {
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
     "dotenv": "^16.4.7",
     "eslint-config-next": "^15.1.4",
     "framer-motion": "^11.16.0",
+    "lucide-react": "^0.471.1",
     "mongoose": "^8.9.4",
     "next": "15.1.4",
     "next-themes": "0.0.10",
     "pg": "^8.13.1",
     "react": "19.0.0",
     "react-dom": "19.0.0",
-    "react-icons": "^4.1.0"
+    "react-icons": "^4.1.0",
+    "tailwind-merge": "^2.6.0",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^3.2.3",
@@ -75,7 +80,5 @@
     "vite-tsconfig-paths": "^5.1.4",
     "vitest": "^3.0.0"
   },
-  "overrides": {
-    "@types/react": "19.0.3"
-  }
+  "overrides": {}
 }
