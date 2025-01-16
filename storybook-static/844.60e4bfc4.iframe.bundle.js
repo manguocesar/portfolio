@@ -12347,14 +12347,12 @@
                   M = { type: 'text', value: ''.concat(k, '\n') };
                 if (0 === B) {
                   var L = g(
-                    d
-                      .slice(f + 1, v)
-                      .concat(
-                        ui({
-                          children: [M],
-                          className: E.properties.className,
-                        }),
-                      ),
+                    d.slice(f + 1, v).concat(
+                      ui({
+                        children: [M],
+                        className: E.properties.className,
+                      }),
+                    ),
                     $,
                   );
                   h.push(L);

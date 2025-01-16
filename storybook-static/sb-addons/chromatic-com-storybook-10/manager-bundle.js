@@ -12798,12 +12798,10 @@ try {
               l(!0),
                 s &&
                   setTimeout(() => {
-                    document
-                      .getElementById(`${s}-option`)
-                      ?.scrollIntoView({
-                        behavior: 'smooth',
-                        inline: 'nearest',
-                      });
+                    document.getElementById(`${s}-option`)?.scrollIntoView({
+                      behavior: 'smooth',
+                      inline: 'nearest',
+                    });
                   }, 200);
             },
             [l],

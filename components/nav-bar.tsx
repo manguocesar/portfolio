@@ -23,12 +23,11 @@ const NavItem = ({ active, setActive, name, route }: NavbarProps) => {
           >
             {name}
           </span>
-        </Link>)
-      }
+        </Link>
+      )}
     </>
-  )
-}
-
+  );
+};
 
 const Navbar = () => {
   const pathname = usePathname();

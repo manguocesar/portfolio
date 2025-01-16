@@ -12057,10 +12057,7 @@ y to select.'
 a(ty, 'getA11yStatusMessage');
 function Qc(e, t) {
   return (
-    (e = Array.isArray(e)
-      ? /* istanbul ignore next (preact) */
-        e[0]
-      : e),
+    (e = Array.isArray(e) ? /* istanbul ignore next (preact) */ e[0] : e),
     !e && t ? t : e
   );
 }
@@ -12716,11 +12713,7 @@ var ip = 0,
             I.onPress;
             var T = I.index,
               C = I.item,
-              P =
-                C === void 0
-                  ? /* istanbul ignore next */
-                    void 0
-                  : C,
+              P = C === void 0 ? /* istanbul ignore next */ void 0 : C,
               O = Te(I, dy);
             T === void 0
               ? (r.items.push(P), (T = r.items.indexOf(P)))
