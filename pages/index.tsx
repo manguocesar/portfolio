@@ -7,7 +7,6 @@ import { lazy } from 'react';
 import Navbar from '../components/navbar';
 import Sidebar from '../components/sidebar';
 import { services } from '../data';
-import { Service } from '../types';
 
 export default function Index() {
   return (
