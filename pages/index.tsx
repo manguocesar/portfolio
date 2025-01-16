@@ -4,8 +4,8 @@ import '../styles/globals.css';
 import { motion } from 'framer-motion';
 import { lazy } from 'react';
 
-import Navbar from '../components/navbar';
-import Sidebar from '../components/sidebar';
+import Navbar from '../components/nnavbar';
+import Sidebar from '../components/ssidebar';
 import { services } from '../data';
 
 export default function Index() {
