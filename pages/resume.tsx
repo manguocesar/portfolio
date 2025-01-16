@@ -1,7 +1,8 @@
 import { lazy } from 'react';
 const Bar = lazy(() => import('../components/Bar'));
-import { languages, tools } from '../data';
 import { motion } from 'framer-motion';
+
+import { languages, tools } from '../data';
 
 export async function getStaticProps() {
   try {
@@ -66,8 +67,8 @@ const Resume = ({ posts }) => {
         <div>
           <h5 className="my-3 text-2xl font-bold">Language & Framework</h5>
           <div className="my-2">
-            {languages.map((language, i) => (
-              <Bar value={language} key={i} />
+            {languages.map((language, index) => (
+              <Bar value={language} key={index} />
             ))}
           </div>
         </div>
@@ -75,8 +76,8 @@ const Resume = ({ posts }) => {
         <div>
           <h5 className="my-3 text-2xl font-bold">Tools & Softwares</h5>
           <div className="my-2">
-            {tools.map((tool, i) => (
-              <Bar value={tool} key={i} />
+            {tools.map((tool, index) => (
+              <Bar value={tool} key={index} />
             ))}
           </div>
         </div>

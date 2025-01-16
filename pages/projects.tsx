@@ -1,9 +1,10 @@
 import { lazy, useState } from 'react';
 const ProjectCard = lazy(() => import('../components/ProjectCard'));
 const ProjectsNavbar = lazy(() => import('../components/ProjectsNavbar'));
+import { motion } from 'framer-motion';
+
 import { projects as projectsData } from '../data';
 import { Category } from '../types';
-import { motion } from 'framer-motion';
 
 const Projects = () => {
   const [projects, setProjects] = useState(projectsData);

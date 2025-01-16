@@ -1,4 +1,5 @@
 import { FunctionComponent } from 'react';
+
 import { Category } from '../types';
 
 export const NavItem: FunctionComponent<{

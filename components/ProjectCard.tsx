@@ -1,10 +1,10 @@
+import { motion } from 'framer-motion';
+import Image from 'next/image';
 import { FunctionComponent, useState } from 'react';
 import { AiFillGithub, AiFillProject } from 'react-icons/ai';
 import { MdClose } from 'react-icons/md';
-import { Project } from '../types';
-import { motion } from 'framer-motion';
 
-import Image from 'next/image';
+import { Project } from '../types';
 
 const ProjectCard: FunctionComponent<{
   project: Project;

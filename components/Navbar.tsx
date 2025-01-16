@@ -1,9 +1,9 @@
 'use client';
 
-import { useState, useEffect, FunctionComponent } from 'react';
-import { usePathname, useRouter } from 'next/navigation';
-import Link from 'next/link';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { FunctionComponent, useEffect, useState } from 'react';
 
 const NavItem: FunctionComponent<{
   active: string;
@@ -11,7 +11,7 @@ const NavItem: FunctionComponent<{
   name: string;
   route: string;
 }> = ({ active, setActive, name, route }) => {
-  return active !== name ? (
+  return active === name ? null : (
     <Link href={route} data-test-id={`cypress-nav-${name}`}>
       <span
         className="mx-2 cursor-pointer hover:border-b-4 hover:text-orange"
@@ -20,7 +20,7 @@ const NavItem: FunctionComponent<{
         {name}
       </span>
     </Link>
-  ) : null;
+  );
 };
 
 const Navbar = () => {
@@ -29,9 +29,23 @@ const Navbar = () => {
   const [active, setActive] = useState('');
 
   useEffect(() => {
-    if (pathname === '/') setActive('About');
-    else if (pathname === '/projects') setActive('Projects');
-    else if (pathname === '/resume') setActive('Resume');
+    switch (pathname) {
+      case '/': {
+        setActive('About');
+        break;
+      }
+      case '/projects': {
+        setActive('Projects');
+        break;
+      }
+      case '/resume': {
+        {
+          setActive('Resume');
+          // No default
+        }
+        break;
+      }
+    }
   }, []);
 
   return (

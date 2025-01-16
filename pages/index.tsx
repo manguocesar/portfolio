@@ -1,11 +1,13 @@
 const ServiceCard = lazy(() => import('../components/ServiceCard'));
+import '../styles/globals.css';
+
+import { motion } from 'framer-motion';
+import { lazy } from 'react';
+
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar';
 import { services } from '../data';
 import { Service } from '../types';
-import { motion } from 'framer-motion';
-import { lazy } from 'react';
-import '../styles/globals.css';
 
 export default function Index() {
   return (

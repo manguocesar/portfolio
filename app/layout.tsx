@@ -1,6 +1,7 @@
-import type { Metadata } from 'next';
 import '../styles/globals.css';
-import { Html, Head, NextScript } from 'next/document';
+
+import type { Metadata } from 'next';
+import { Head, Html, NextScript } from 'next/document';
 
 export const metadata: Metadata = {
   title: 'Home',

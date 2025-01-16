@@ -1,12 +1,12 @@
 'use client';
 
-import { AiFillGithub, AiFillLinkedin, AiFillWechat } from 'react-icons/ai';
-import { GiTie, GiClick } from 'react-icons/gi';
-import { GoLocation } from 'react-icons/go';
-import { useTheme } from 'next-themes';
-import Image from 'next/image';
-import { useState } from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
+import { useTheme } from 'next-themes';
+import { useState } from 'react';
+import { AiFillGithub, AiFillLinkedin, AiFillWechat } from 'react-icons/ai';
+import { GiClick, GiTie } from 'react-icons/gi';
+import { GoLocation } from 'react-icons/go';
 
 const Sidebar = () => {
   const { theme, setTheme } = useTheme();
