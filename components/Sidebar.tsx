@@ -1,3 +1,5 @@
+"use client"
+
 import { AiFillGithub, AiFillLinkedin, AiFillWechat } from "react-icons/ai";
 import { GiTie, GiClick } from "react-icons/gi";
 import { GoLocation } from "react-icons/go";

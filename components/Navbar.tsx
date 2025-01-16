@@ -1,5 +1,7 @@
+"use client"
+
 import { useState, useEffect, FunctionComponent } from 'react'
-import { useRouter } from 'next/router'
+import { usePathname, useRouter } from 'next/navigation'
 import Link from 'next/link'
 import { motion } from "framer-motion";
 
@@ -22,11 +24,10 @@ const NavItem: FunctionComponent<{
 }
 
 const Navbar = () => {
-   const { pathname } = useRouter()
+   const pathname = usePathname()
 
    const [active, setActive] = useState('')
 
-   //later
    useEffect(() => {
       if (pathname === '/') setActive('About')
       else if (pathname === '/projects') setActive('Projects')
@@ -35,9 +36,9 @@ const Navbar = () => {
 
    return (
       <motion.div
-      initial={{ x: 20, opacity: 0 }}
-      animate={{ x: 0, opacity: 1 }}
-      transition={{ ease: "easeInOut", duration: 0.75 }} className='flex items-center justify-between px-5 py-3 my-3'>
+         initial={{ x: 20, opacity: 0 }}
+         animate={{ x: 0, opacity: 1 }}
+         transition={{ ease: "easeInOut", duration: 0.75 }} className='flex items-center justify-between px-5 py-3 my-3'>
          <span className='text-xl font-bold border-b-4 md:text-2xl border-orange'>
             {active}
          </span>
