@@ -14,7 +14,8 @@
     "lint": "next lint",
     "format": "prettier --write .",
     "type-check": "tsc -b",
-    "lint:fix": "next lint --fix"
+    "lint:fix": "next lint --fix",
+    "prepare": "husky install"
   },
   "dependencies": {
     "dotenv": "^16.4.7",
@@ -30,6 +31,8 @@
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^3.2.3",
+    "@commitlint/cli": "^19.6.1",
+    "@commitlint/config-conventional": "^19.6.0",
     "@playwright/test": "^1.49.1",
     "@storybook/addon-essentials": "^8.5.0",
     "@storybook/addon-interactions": "^8.5.0",
@@ -42,7 +45,9 @@
     "@types/react": "19.0.3",
     "@typescript-eslint/parser": "^8.20.0",
     "autoprefixer": "^10.2.4",
+    "commitizen": "^4.3.1",
     "cypress": "^13.17.0",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^9.18.0",
     "eslint-config-prettier": "^10.0.1",
     "eslint-plugin-import": "^2.31.0",
@@ -50,6 +55,7 @@
     "eslint-plugin-prettier": "^5.2.2",
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "eslint-plugin-unicorn": "^56.0.1",
+    "husky": "^8.0.0",
     "postcss": "^8.2.4",
     "prettier": "^3.4.2",
     "prettier-plugin-tailwindcss": "^0.6.10",
