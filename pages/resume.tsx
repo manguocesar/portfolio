@@ -1,5 +1,5 @@
 import { lazy } from 'react';
-const Bar = lazy(() => import('../components/Bar'));
+const Bar = lazy(() => import('../components/bar'));
 import { motion } from 'framer-motion';
 
 import { languages, tools } from '../data';

@@ -1,11 +1,11 @@
-const ServiceCard = lazy(() => import('../components/ServiceCard'));
+const ServiceCard = lazy(() => import('../components/service-card'));
 import '../styles/globals.css';
 
 import { motion } from 'framer-motion';
 import { lazy } from 'react';
 
-import Navbar from '../components/Navbar';
-import Sidebar from '../components/Sidebar';
+import Navbar from '../components/navbar';
+import Sidebar from '../components/sidebar';
 import { services } from '../data';
 import { Service } from '../types';
 

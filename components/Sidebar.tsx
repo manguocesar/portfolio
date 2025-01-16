@@ -50,7 +50,7 @@ const Sidebar = () => {
       <div className="mx-auto my-4 flex w-10/12 justify-around text-orange md:w-full">
         {wechat ? (
           <div className="w-3/12">
-            <img alt="wechat-picture" src="/images/wechat.jpg" />
+            <Image alt="wechat-picture" src="/images/wechat.jpg" />
           </div>
         ) : (
           <AiFillWechat

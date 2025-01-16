@@ -1,6 +1,6 @@
 import { lazy, useState } from 'react';
-const ProjectCard = lazy(() => import('../components/ProjectCard'));
-const ProjectsNavbar = lazy(() => import('../components/ProjectsNavbar'));
+const ProjectCard = lazy(() => import('../components/project-card'));
+const ProjectsNavbar = lazy(() => import('../components/projects-navbar'));
 import { motion } from 'framer-motion';
 
 import { projects as projectsData } from '../data';
@@ -34,6 +34,7 @@ const Projects = () => {
       <div className="relative my-3 grid grid-cols-12 items-center gap-5">
         {projects.map(project => (
           <motion.div
+            key={project.name}
             whileHover={{
               scale: 1.04,
               transition: { duration: 0.3 },

@@ -11,7 +11,7 @@ const NavItem: FunctionComponent<{
   name: string;
   route: string;
 }> = ({ active, setActive, name, route }) => {
-  return active === name ? null : (
+  return active === name ? undefined : (
     <Link href={route} data-test-id={`cypress-nav-${name}`}>
       <span
         className="mx-2 cursor-pointer hover:border-b-4 hover:text-orange"
@@ -46,7 +46,7 @@ const Navbar = () => {
         break;
       }
     }
-  }, []);
+  }, [pathname]);
 
   return (
     <motion.div
