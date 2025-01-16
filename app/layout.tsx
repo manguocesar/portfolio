@@ -1,34 +1,30 @@
 import type { Metadata } from 'next'
 import '../styles/globals.css'
-
-import { motion } from "framer-motion";
-import { ComponentProps, lazy, ReactNode } from 'react'
-const Navbar = lazy(() => import("../components/Navbar"));
-const Sidebar = lazy(() => import("../components/Sidebar"));
-
-
+import { Html, Head, NextScript } from "next/document";
 
 export const metadata: Metadata = {
-    title: 'Home',
-    description: 'Welcome to Next.js',
+  title: 'Home',
+  description: 'Welcome to Next.js',
 }
 
 export default function RootLayout({
-    // Layouts must accept a children prop.
-    // This will be populated with nested layouts or pages
-    children,
+  children,
 }: {
-    children: React.ReactNode
+  children: React.ReactNode
 }) {
-    return (
-        <html lang="en">
-            <body>
-
-                  
-                            {children}
-                        
-
-            </body>
-        </html>
-    )
+  return (
+    <Html lang="en">
+      <Head>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap"
+          rel="stylesheet"
+        />
+      </Head>
+      <body className="bg-fixed bg-gradient-to-tr from-blue-800 to-orange dark:from-dark-500 dark:to-dark-700 dark:text-white">
+        {children}
+        <NextScript />
+      </body>
+    </Html>
+  )
 }
