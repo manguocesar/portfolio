@@ -12,7 +12,8 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "lint": "next lint",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "type-check": "tsc -b"
   },
   "dependencies": {
     "dotenv": "^16.4.7",
@@ -37,9 +38,18 @@
     "@storybook/test": "^8.5.0",
     "@types/node": "^14.14.22",
     "@types/react": "19.0.3",
+    "@typescript-eslint/parser": "^8.20.0",
     "autoprefixer": "^10.2.4",
     "cypress": "^13.17.0",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-playwright": "^2.1.0",
+    "eslint-plugin-prettier": "^5.2.2",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "eslint-plugin-unicorn": "^56.0.1",
     "postcss": "^8.2.4",
+    "prettier": "^3.4.2",
+    "prettier-plugin-tailwindcss": "^0.6.10",
     "storybook": "^8.5.0",
     "tailwindcss": "^2.0.2",
     "typescript": "^4.5.2"

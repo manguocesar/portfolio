@@ -1,4 +1,4 @@
-import Document, { Html, Head, Main, NextScript } from "next/document";
+import Document, { Html, Head, Main, NextScript } from 'next/document';
 
 class MyDocument extends Document {
   render() {
@@ -11,7 +11,7 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
         </Head>
-        <body className="bg-fixed bg-gradient-to-tr from-blue-800 to-orange dark:from-dark-500 dark:to-dark-700 dark:text-white">
+        <body className="bg-gradient-to-tr from-blue-800 to-orange bg-fixed dark:from-dark-500 dark:to-dark-700 dark:text-white">
           <Main />
           <NextScript />
         </body>

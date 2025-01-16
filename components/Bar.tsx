@@ -1,15 +1,15 @@
-import { FunctionComponent } from "react";
+import { FunctionComponent } from 'react';
 
-import { Skill } from "../types";
+import { Skill } from '../types';
 
 const Bar: FunctionComponent<{ value: Skill }> = ({
   value: { Icon, level, name },
 }) => {
   const bar_width = `${level}%`;
   return (
-    <div className="my-2 text-white bg-gray-300 rounded-full dark:bg-dark-300 dark:bg-black-500">
+    <div className="dark:bg-black-500 my-2 rounded-full bg-gray-300 text-white dark:bg-dark-300">
       <div
-        className="flex items-center px-4 py-1 rounded-full bg-gradient-to-tr from-blue-800 to-orange"
+        className="flex items-center rounded-full bg-gradient-to-tr from-blue-800 to-orange px-4 py-1"
         style={{
           width: bar_width,
         }}

@@ -1,16 +1,16 @@
-import type { Metadata } from 'next'
-import '../styles/globals.css'
-import { Html, Head, NextScript } from "next/document";
+import type { Metadata } from 'next';
+import '../styles/globals.css';
+import { Html, Head, NextScript } from 'next/document';
 
 export const metadata: Metadata = {
   title: 'Home',
   description: 'Welcome to Next.js',
-}
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <Html lang="en">
@@ -21,10 +21,10 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </Head>
-      <body className="bg-fixed bg-gradient-to-tr from-blue-800 to-orange dark:from-dark-500 dark:to-dark-700 dark:text-white">
+      <body className="bg-gradient-to-tr from-blue-800 to-orange bg-fixed dark:from-dark-500 dark:to-dark-700 dark:text-white">
         {children}
         <NextScript />
       </body>
     </Html>
-  )
+  );
 }

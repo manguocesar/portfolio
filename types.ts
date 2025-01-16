@@ -1,4 +1,4 @@
-import { IconType } from "react-icons";
+import { IconType } from 'react-icons';
 export interface Service {
   Icon: IconType;
   title: string;
@@ -21,7 +21,20 @@ export interface Project {
   key_techs: string[];
 }
 
-export type Category = "react" | "expo" | "graphQL" | "react native" | "tailwindcss"
- | "headlessCMS" | "node" | "express" | "mongo" |
-  "next" | "typescript" | "antUI" |"materialUI" |"postGreSQL" |
-  "GoogleSpreadsheet" | "AWS" ;
+export type Category =
+  | 'react'
+  | 'expo'
+  | 'graphQL'
+  | 'react native'
+  | 'tailwindcss'
+  | 'headlessCMS'
+  | 'node'
+  | 'express'
+  | 'mongo'
+  | 'next'
+  | 'typescript'
+  | 'antUI'
+  | 'materialUI'
+  | 'postGreSQL'
+  | 'GoogleSpreadsheet'
+  | 'AWS';

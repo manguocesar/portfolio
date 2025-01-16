@@ -1,70 +1,67 @@
-"use client"
+'use client';
 
-import { useState, useEffect, FunctionComponent } from 'react'
-import { usePathname, useRouter } from 'next/navigation'
-import Link from 'next/link'
-import { motion } from "framer-motion";
+import { useState, useEffect, FunctionComponent } from 'react';
+import { usePathname, useRouter } from 'next/navigation';
+import Link from 'next/link';
+import { motion } from 'framer-motion';
 
 const NavItem: FunctionComponent<{
-   active: string
-   setActive: Function
-   name: string
-   route: string
+  active: string;
+  setActive: Function;
+  name: string;
+  route: string;
 }> = ({ active, setActive, name, route }) => {
-   return active !== name ? (
-      <Link href={route} data-test-id={`cypress-nav-${name}`}>
-         <span
-            className='mx-2 cursor-pointer hover:border-b-4 hover:text-orange'
-            onClick={() => setActive(name)}>
-            {name}
-         </span>
-
-      </Link>
-   ) : null;
-}
+  return active !== name ? (
+    <Link href={route} data-test-id={`cypress-nav-${name}`}>
+      <span
+        className="mx-2 cursor-pointer hover:border-b-4 hover:text-orange"
+        onClick={() => setActive(name)}
+      >
+        {name}
+      </span>
+    </Link>
+  ) : null;
+};
 
 const Navbar = () => {
-   const pathname = usePathname()
+  const pathname = usePathname();
 
-   const [active, setActive] = useState('')
+  const [active, setActive] = useState('');
 
-   useEffect(() => {
-      if (pathname === '/') setActive('About')
-      else if (pathname === '/projects') setActive('Projects')
-      else if (pathname === '/resume') setActive('Resume')
-   }, [])
+  useEffect(() => {
+    if (pathname === '/') setActive('About');
+    else if (pathname === '/projects') setActive('Projects');
+    else if (pathname === '/resume') setActive('Resume');
+  }, []);
 
-   return (
-      <motion.div
-         initial={{ x: 20, opacity: 0 }}
-         animate={{ x: 0, opacity: 1 }}
-         transition={{ ease: "easeInOut", duration: 0.75 }} className='flex items-center justify-between px-5 py-3 my-3'>
-         <span className='text-xl font-bold border-b-4 md:text-2xl border-orange'>
-            {active}
-         </span>
+  return (
+    <motion.div
+      initial={{ x: 20, opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
+      transition={{ ease: 'easeInOut', duration: 0.75 }}
+      className="my-3 flex items-center justify-between px-5 py-3"
+    >
+      <span className="border-b-4 border-orange text-xl font-bold md:text-2xl">
+        {active}
+      </span>
 
-         <div className='text-base font-normal md:text-xl'>
-            <NavItem
-               active={active}
-               setActive={setActive}
-               name='About'
-               route='/'
-            />
-            <NavItem
-               active={active}
-               setActive={setActive}
-               name='Resume'
-               route='/resume'
-            />
-            <NavItem
-               active={active}
-               setActive={setActive}
-               name='Projects'
-               route='/projects'
-            />
-         </div>
-      </motion.div>
-   )
-}
+      <div className="text-base font-normal md:text-xl">
+        <NavItem active={active} setActive={setActive} name="About" route="/" />
+        <NavItem
+          active={active}
+          setActive={setActive}
+          name="Resume"
+          route="/resume"
+        />
+        <NavItem
+          active={active}
+          setActive={setActive}
+          name="Projects"
+          route="/projects"
+        />
+      </div>
+    </motion.div>
+  );
+};
 
-export default Navbar
+export default Navbar;
