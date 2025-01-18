@@ -86,7 +86,7 @@ const Sidebar = () => {
           transition: { duration: 0.3 },
         }}
         className="focus:outline-none w-8/12 cursor-pointer rounded-full bg-black bg-gradient-to-tr from-blue-800 to-orange px-5 py-2 text-white hover:scale-105"
-        onClick={() => window.open('cesar.hertz@icloud.com')}
+        onClick={() => window.open('mailto:cesar.hertz@icloud.com')}
       >
         Email me
       </motion.button>
