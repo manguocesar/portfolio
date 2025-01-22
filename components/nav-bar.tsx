@@ -59,7 +59,7 @@ const Navbar = () => {
       initial={{ x: 20, opacity: 0 }}
       animate={{ x: 0, opacity: 1 }}
       transition={{ ease: 'easeInOut', duration: 0.75 }}
-      className="my-3 flex items-center justify-between px-5 py-3"
+      className="my-2 flex items-center justify-between px-5 py-1"
     >
       <span className="border-b-4 border-orange text-xl font-bold md:text-2xl">
         {active}

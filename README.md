@@ -2,6 +2,7 @@
 
 ## Upcoming features
 
+0. loading skeleton in app folder - project
 1. rtk query
 2. vitestest testing
 3. files grouping structure
