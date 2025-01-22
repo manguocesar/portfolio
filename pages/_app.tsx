@@ -1,5 +1,5 @@
 import '../styles/globals.css';
-
+import Head from 'next/head'
 import { ThemeProvider } from 'next-themes';
 import { motion } from 'framer-motion';
 import { ComponentProps, lazy, ReactNode } from 'react';
@@ -16,6 +16,10 @@ const ThemeProviderExtended = (props: ExistingThemeProviderProps) => (
 export default function MyApp({ Component, pageProps }) {
   return (
     <ThemeProviderExtended attribute="class">
+      <Head>
+        <title>Cesar 何赛 Portfolio</title>
+        <meta name="description" content="Website showcasing Cesar's projects" />
+      </Head>
       <motion.div
         initial={{ y: 20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
