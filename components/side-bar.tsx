@@ -31,17 +31,18 @@ const Sidebar = () => {
         quality="100"
         priority
       />
-      <h3 className="my-4 font-kaushan text-3xl font-medium tracking-wider">
+      <h3 className="mt-4 font-kaushan text-3xl font-medium tracking-wider">
         <span className="text-orange">Cesar</span> 何赛
       </h3>
-      <p className="dark:bg-black-500 my-3 flex items-center justify-center rounded-full bg-gray-200 px-2 py-1 dark:bg-dark-200">
+      <p className="dark:bg-black-500 font-bold text-xl mb-3 italic flex items-center justify-center rounded-full
+        px-2 dark:bg-dark-200">
         Web Developer
         <GiTie className="h-6 w-6" />
       </p>
       <a
         href="/assets/2025 CV Cesar HERTZ Software.pdf"
         download="2025 CV Cesar HERTZ Software.pdf"
-        className="dark:bg-black-500 my-2 flex cursor-pointer items-center justify-center rounded-full bg-gray-200 px-2 py-1 dark:bg-dark-200"
+        className="dark:bg-black-500 border-2 hover:border-orange my-2 flex cursor-pointer items-center justify-center rounded-full bg-gray-200 px-2 py-1 dark:bg-dark-200"
       >
         <span>Download Resume</span>
         <GiClick className="h-4 w-4" />
@@ -49,21 +50,38 @@ const Sidebar = () => {
 
       <div className="mx-auto my-4 flex w-10/12 justify-around text-orange md:w-full">
         {wechat ? (
-          <div className="w-3/12">
-            <Image alt="wechat-picture" src="/images/wechat.jpg" />
+          <div
+          onClick={() => setWechat(false)}
+            className="absolute w-3/12 border-2 border-orange cursor-pointer">
+            <Image width={300} height={300} alt="wechat-picture" src="/images/wechat.jpg" />
           </div>
         ) : (
-          <AiFillWechat
-            className="h-8 w-8 cursor-pointer"
-            onClick={() => setWechat(true)}
-          />
+          <motion.div whileHover={{
+            scale: 1.4,
+            transition: { duration: 0.3 }
+          }}>
+            <AiFillWechat
+              className="h-8 w-8 cursor-pointer"
+              onClick={() => setWechat(true)}
+            />
+          </motion.div>
         )}
-        <a href="https://www.linkedin.com/in/hertz-cesar/">
-          <AiFillLinkedin className="h-8 w-8 cursor-pointer" />
-        </a>
-        <a href="https://github.com/manguocesar">
-          <AiFillGithub className="h-8 w-8 cursor-pointer" />{' '}
-        </a>
+        <motion.div whileHover={{
+          scale: 1.4,
+          transition: { duration: 0.3 },
+        }}>
+          <a href="https://www.linkedin.com/in/hertz-cesar/">
+            <AiFillLinkedin className="h-8 w-8 cursor-pointer" />
+          </a>
+        </motion.div>
+        <motion.div whileHover={{
+          scale: 1.4,
+          transition: { duration: 0.3 },
+        }}>
+          <a href="https://github.com/manguocesar">
+            <AiFillGithub className="h-8 w-8 cursor-pointer" />{' '}
+          </a>
+        </motion.div>
       </div>
 
       <div
