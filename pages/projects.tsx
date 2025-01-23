@@ -35,10 +35,6 @@ const Projects = () => {
         {projects.map(project => (
           <motion.div
             key={project.name}
-            whileHover={{
-              scale: 1.04,
-              transition: { duration: 0.3 },
-            }}
             className="col-span-12 flex h-full items-center justify-center rounded-lg bg-gray-200 p-2 dark:bg-dark-200 sm:col-span-6 lg:col-span-4"
           >
             <ProjectCard project={project} key={project.name} />
