@@ -1,4 +1,4 @@
-'use client';
+'use server';
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
@@ -28,8 +28,8 @@ const Sidebar = () => {
         className="mx-auto rounded-full border"
         height={170}
         width={128}
-        layout="intrinsic"
         quality="100"
+        priority
       />
       <h3 className="my-4 font-kaushan text-3xl font-medium tracking-wider">
         <span className="text-orange">Cesar</span> 何赛
@@ -66,7 +66,6 @@ const Sidebar = () => {
         </a>
       </div>
 
-      {/* Contacts */}
       <div
         className="dark:bg-black-500 my-5 bg-gray-200 py-4 dark:bg-dark-200"
         style={{ marginLeft: '-1rem', marginRight: '-1rem' }}
@@ -77,8 +76,6 @@ const Sidebar = () => {
         <p className="my-2">cesar.hertz@icloud.com</p>
         <p className="my-2">+45 31 80 92 75</p>
       </div>
-
-      {/* Email Button */}
 
       <motion.button
         whileHover={{
@@ -99,7 +96,6 @@ const Sidebar = () => {
         data-cy="change-theme"
         className="focus:outline-none my-4 w-8/12 cursor-pointer rounded-full bg-black bg-gradient-to-tr from-blue-800 to-orange px-5 py-2 text-white hover:scale-105"
       >
-        {/* //TODO remove bg black */}
         Day / Night Theme
       </motion.button>
     </motion.div>
