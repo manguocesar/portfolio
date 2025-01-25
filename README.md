@@ -18,7 +18,7 @@ Open the browser at http://localhost:3000/
 Hosted with [Vercel](https://vercel.com/)
 
 ## Upcoming features
-
+-- loading.js files
 0. move from NextJs page router to app router - Next15^
 1. loading skeleton in app folder - project
 2. rtk query

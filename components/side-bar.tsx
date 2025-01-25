@@ -91,8 +91,8 @@ const Sidebar = () => {
         <div className="flex items-center justify-center">
           <GoLocation className="mr-2" /> <span>Copenhagen </span>
         </div>
-        <p className="my-2">cesar.hertz@icloud.com</p>
-        <p className="my-2">+45 31 80 92 75</p>
+        <a href='https://www.linkedin.com/in/hertz-cesar/'  target="_blank" className="my-2">cesar.hertz@icloud.com</a>
+        <p className="my-2">+ 45 31 80 92 75</p>
       </div>
 
       <motion.button
