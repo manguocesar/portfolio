@@ -2,11 +2,11 @@
 
 import React from 'react';
 
-const Button = ({ title }: { title: string }) => {
-  const changeTheme = async () => {
-    document.documentElement.classList.toggle('dark');
-  };
+const changeTheme = async () => {
+  document.documentElement.classList.toggle('dark');
+};
 
+const Button = ({ title }: { title: string }) => {
   return (
     <button
       onClick={() => {
