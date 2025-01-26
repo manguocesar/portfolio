@@ -30,7 +30,7 @@ export default function Layout({
 }) {
   return (
     <html suppressHydrationWarning>
-      <body className="bg-gradient-to-tr from-blue-800 to-orange bg-fixed dark:from-dark-500 dark:to-dark-700 dark:text-white">
+      <body className="dark:bg-slate-950 bg-gradient-to-tr from-blue-800 to-orange bg-fixed dark:from-dark-500 dark:to-dark-700 dark:text-white">
         <div className={inter.className}>
           <div className="my-8 grid grid-cols-12 gap-6 px-5 sm:px-20 md:mb-16 md:px-32 lg:mb-0 lg:px-36 xl:px-48">
             <div
