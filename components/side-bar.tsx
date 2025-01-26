@@ -28,10 +28,10 @@ const Sidebar = () => {
           priority
         />
         <div className="flex flex-col justify-end sm:items-center">
-          <h3 className="text-center font-kaushan text-3xl font-medium tracking-wider md:mt-4 md:text-center">
+          <h3 className="font-kaushan text-center text-3xl font-medium tracking-wider md:mt-4 md:text-center">
             <span className="text-orange">Cesar</span> 何赛
           </h3>
-          <p className="dark:bg-black-500 flex items-center justify-center rounded-full text-lg font-bold italic dark:bg-dark-200 md:mb-3 md:px-2">
+          <p className="dark:bg-black-500 dark:bg-dark-200 flex items-center justify-center rounded-full text-lg font-bold italic md:mb-3 md:px-2">
             Web Developer
             <GiTie className="h-6 w-6" />
           </p>
@@ -39,7 +39,7 @@ const Sidebar = () => {
             aria-label="Open Cesar's resume"
             href="/assets/2025 CV Cesar HERTZ Software.pdf"
             download="2025 CV Cesar HERTZ Software.pdf"
-            className="dark:bg-black-500 my-2 flex cursor-pointer items-center justify-center rounded-full border-2 bg-gray-200 px-2 py-1 hover:border-orange dark:bg-dark-200 sm:w-1/2 lg:w-full"
+            className="dark:bg-black-500 hover:border-orange dark:bg-dark-200 my-2 flex cursor-pointer items-center justify-center rounded-full border-2 bg-gray-200 px-2 py-1 sm:w-1/2 lg:w-full"
           >
             <span>Download Resume</span>
             <GiClick className="h-4 w-4 lg:w-1/6" />
@@ -47,7 +47,7 @@ const Sidebar = () => {
         </div>
       </div>
 
-      <div className="relative mx-auto my-4 flex w-10/12 items-center justify-around text-orange sm:w-1/2 sm:justify-around lg:w-full">
+      <div className="text-orange relative mx-auto my-4 flex w-10/12 items-center justify-around sm:w-1/2 sm:justify-around lg:w-full">
         <Wechat />
         <div className="">
           <a
@@ -70,7 +70,7 @@ const Sidebar = () => {
       </div>
 
       <div
-        className="dark:bg-black-500 my-2 bg-gray-200 py-1 dark:bg-dark-200 md:my-5 md:py-4"
+        className="dark:bg-black-500 dark:bg-dark-200 my-2 bg-gray-200 py-1 md:my-5 md:py-4"
         // style={{ marginLeft: '-1rem', marginRight: '-1rem' }}
       >
         <div className="flex items-center justify-center">

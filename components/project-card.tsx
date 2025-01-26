@@ -26,7 +26,7 @@ const ProjectCard: FunctionComponent<{
       <Image
         src={image_path}
         alt={name}
-        className="block cursor-pointer rounded-lg border-4 hover:border-orange lg:block"
+        className="hover:border-orange block cursor-pointer rounded-lg border-4 lg:block"
         onClick={() => setShowDetail(true)}
         height="150"
         width="300"
@@ -34,7 +34,7 @@ const ProjectCard: FunctionComponent<{
       />
       <p className="my-2 text-center font-bold">{name}</p>
       {showDetail && (
-        <div className="absolute left-0 top-0 z-10 h-auto w-full gap-x-12 rounded-lg bg-gray-100 p-2 text-black dark:bg-dark-100 dark:text-white sm:grid">
+        <div className="dark:bg-dark-100 absolute top-0 left-0 z-10 h-auto w-full gap-x-12 rounded-lg bg-gray-100 p-2 text-black sm:grid dark:text-white">
           <div>
             <h2 className="my-3 text-3xl font-bold sm:text-2xl">{name}</h2>
             <h3 className="mb-3 text-xl font-medium">{description}</h3>
@@ -43,7 +43,7 @@ const ProjectCard: FunctionComponent<{
               {key_techs.map(tech => (
                 <span
                   key={tech}
-                  className="rounde-sm m-1 bg-gray-200 px-2 py-1 dark:bg-dark-200"
+                  className="rounde-sm dark:bg-dark-200 m-1 bg-gray-200 px-2 py-1"
                 >
                   {tech}
                 </span>
@@ -56,7 +56,7 @@ const ProjectCard: FunctionComponent<{
                 target="_blank"
                 aria-label="Open the github repo"
                 href={github_url}
-                className="flex items-center rounded border-2 bg-gray-200 px-4 py-2 text-xl hover:border-orange dark:bg-dark-200 md:my-2 md:space-x-3"
+                className="hover:border-orange dark:bg-dark-200 flex items-center rounded border-2 bg-gray-200 px-4 py-2 text-xl md:my-2 md:space-x-3"
               >
                 <AiFillGithub /> <span>Github</span>
               </a>
@@ -64,7 +64,7 @@ const ProjectCard: FunctionComponent<{
                 target="_blank"
                 aria-label="Open the web app"
                 href={deployed_url}
-                className="flex items-center rounded border-2 bg-gray-200 px-4 py-2 text-xl hover:border-orange dark:bg-dark-200 md:space-x-3"
+                className="hover:border-orange dark:bg-dark-200 flex items-center rounded border-2 bg-gray-200 px-4 py-2 text-xl md:space-x-3"
               >
                 <AiFillProject /> <span>Project</span>
               </a>
@@ -73,7 +73,7 @@ const ProjectCard: FunctionComponent<{
 
           <button
             onClick={() => setShowDetail(false)}
-            className="focus:outline-none absolute right-3 top-3 rounded-full border-2 bg-gray-200 p-1 hover:border-orange dark:bg-dark-200"
+            className="hover:border-orange dark:bg-dark-200 absolute top-3 right-3 rounded-full border-2 bg-gray-200 p-1 focus:outline-none"
           >
             <MdClose size={30} />
           </button>

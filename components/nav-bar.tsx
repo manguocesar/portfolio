@@ -18,7 +18,7 @@ const NavItem = ({ active, setActive, name, route }: NavbarProps) => {
       {active === name ? undefined : (
         <Link href={route} data-test-id={`cypress-nav-${name}`}>
           <span
-            className="mx-2 cursor-pointer hover:border-b-4 hover:text-orange"
+            className="hover:text-orange mx-2 cursor-pointer hover:border-b-4"
             onClick={() => setActive(name)}
           >
             {name}
@@ -61,7 +61,7 @@ const Navbar = () => {
       transition={{ ease: 'easeInOut', duration: 0.75 }}
       className="my-2 flex items-center justify-between px-5 py-1"
     >
-      <span className="border-b-4 border-orange text-xl font-bold md:text-2xl">
+      <span className="border-orange border-b-4 text-xl font-bold md:text-2xl">
         {active}
       </span>
 

@@ -14,14 +14,14 @@ const Page = async () => {
         {introduction}
       </h6>
       <div
-        className="flex-grow bg-gray-400 p-4 dark:bg-dark-100 sm:mt-5"
+        className="dark:bg-dark-100 flex-grow bg-gray-400 p-4 sm:mt-5"
         style={{ marginLeft: '-1.5rem', marginRight: '-1.5rem' }}
       >
         <h4 className="my-1 text-2xl font-bold tracking-wide">What I do:</h4>
         <div className="my-3 grid gap-6 sm:grid-cols-2">
           {services.map(service => (
             <div
-              className="col-span-2 rounded-lg bg-gray-200 p-2 dark:bg-dark-200 sm:col-span-1"
+              className="dark:bg-dark-200 col-span-2 rounded-lg bg-gray-200 p-2 sm:col-span-1"
               key={service.title}
             >
               <ServiceCard service={service} />

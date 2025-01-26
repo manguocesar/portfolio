@@ -35,7 +35,7 @@ const Page = () => {
         {projects.map(project => (
           <div
             key={project.name}
-            className="relative col-span-12 flex h-full items-center justify-center rounded-lg bg-gray-200 p-2 dark:bg-dark-200 sm:col-span-6 lg:col-span-4"
+            className="dark:bg-dark-200 relative col-span-12 flex h-full items-center justify-center rounded-lg bg-gray-200 p-2 sm:col-span-6 lg:col-span-4"
           >
             <ProjectCard project={project} key={project.name} />
           </div>

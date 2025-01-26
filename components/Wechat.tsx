@@ -10,7 +10,7 @@ const Wechat = () => {
       {wechat ? (
         <div
           onClick={() => setWechat(false)}
-          className="left-0 w-3/12 cursor-pointer border-2 border-orange"
+          className="border-orange left-0 w-3/12 cursor-pointer border-2"
         >
           <Image
             width={300}
