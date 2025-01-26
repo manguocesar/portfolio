@@ -3,7 +3,6 @@
     "next/core-web-vitals",
     "plugin:unicorn/recommended",
     "plugin:import/recommended",
-    "plugin:playwright/recommended",
     "plugin:prettier/recommended"
   ],
   "plugins": ["simple-import-sort"],

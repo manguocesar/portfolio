@@ -16,10 +16,14 @@ module.exports = {
     },
 
     extend: {
+      height:{
+        80:'80vh'
+      },
       colors: {
         orange: {
           DEFAULT: '#FF8C00',
         },
+        
         dark: {
           DEFAULT: '#010101',
           100: '#0a0b0e',

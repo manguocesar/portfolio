@@ -19,81 +19,68 @@ const ProjectCard: FunctionComponent<{
     key_techs,
   },
 }) => {
-    const [showDetail, setShowDetail] = useState(false);
+  const [showDetail, setShowDetail] = useState(false);
 
-    return (
-      <motion.div>
-        <Image
-          src={image_path}
-          alt={name}
-          className="lg:hidden rounded-lg"
-          height="150"
-          width="300"
+  return (
+    <motion.div className="">
+      <Image
+        src={image_path}
+        alt={name}
+        className="block cursor-pointer rounded-lg border-4 hover:border-orange lg:block"
+        onClick={() => setShowDetail(true)}
+        height="150"
+        width="300"
+        priority
+      />
+      <p className="my-2 text-center font-bold">{name}</p>
+      {showDetail && (
+        <div className="absolute left-0 top-0 z-10 h-auto w-full gap-x-12 rounded-lg bg-gray-100 p-2 text-black dark:bg-dark-100 dark:text-white sm:grid">
+          <div>
+            <h2 className="my-3 text-3xl font-bold sm:text-2xl">{name}</h2>
+            <h3 className="mb-3 text-xl font-medium">{description}</h3>
 
-        />
-        <Image
-          src={image_path}
-          alt={name}
-          className="hidden lg:block cursor-pointer rounded-lg hover:border-orange border-4"
-          onClick={() => setShowDetail(true)}
-          height="150"
-          width="300"
-        />
-        <p className="my-2 text-center font-bold">{name}</p>
-
-        {showDetail && (
-          <div className="hidden absolute left-0 top-0 z-10 md:grid w-full h-auto gap-x-12
-         bg-gray-100 p-2 text-black dark:bg-dark-100 dark:text-white md:grid-cols-2">
-            <div>
-              <Image
-                src={image_path}
-                alt={name}
-                className="rounded-xl"
-                height="150"
-                width="300"
-              />
-              <div className="my-4 flex justify-center space-x-3">
-                <a target="_blank" aria-label="Open the github repo"
-                  href={github_url}
-                  className="flex items-center space-x-3 rounded hover:border-orange border-2 bg-gray-200 px-4 py-2 text-lg dark:bg-dark-200"
+            <div className="flex flex-wrap text-sm tracking-wider md:mt-5">
+              {key_techs.map(tech => (
+                <span
+                  key={tech}
+                  className="rounde-sm m-1 bg-gray-200 px-2 py-1 dark:bg-dark-200"
                 >
-                  <AiFillGithub /> <span>Github</span>
-                </a>
-                <a target="_blank" aria-label="Open the web app"
-                  href={deployed_url}
-                  className="flex items-center space-x-3 rounded hover:border-orange border-2 bg-gray-200 px-4 py-2 text-lg dark:bg-dark-200"
-                >
-                  <AiFillProject /> <span>Project</span>
-                </a>
-              </div>
+                  {tech}
+                </span>
+              ))}
             </div>
-
-            <div>
-              <h2 className="mb-3 text-xl font-bold md:text-2xl">{name}</h2>
-              <h3 className="mb-3 font-medium">{description}</h3>
-
-              <div className="mt-5 flex flex-wrap space-x-2 text-sm tracking-wider">
-                {key_techs.map(tech => (
-                  <span
-                    key={tech}
-                    className="rounde-sm my-1 bg-gray-200 px-2 py-1 dark:bg-dark-200"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
-            </div>
-
-            <button
-              onClick={() => setShowDetail(false)}
-              className="focus:outline-none absolute hover:border-orange border-2 right-3 top-3 rounded-full bg-gray-200 p-1 dark:bg-dark-200"
-            >
-              <MdClose size={30} />
-            </button>
           </div>
-        )}
-      </motion.div>
-    );
-  };
+          <div>
+            <div className="my-2 flex justify-center md:my-4 md:flex-col">
+              <a
+                target="_blank"
+                aria-label="Open the github repo"
+                href={github_url}
+                className="flex items-center rounded border-2 bg-gray-200 px-4 py-2 text-xl hover:border-orange dark:bg-dark-200 md:my-2 md:space-x-3"
+              >
+                <AiFillGithub /> <span>Github</span>
+              </a>
+              <a
+                target="_blank"
+                aria-label="Open the web app"
+                href={deployed_url}
+                className="flex items-center rounded border-2 bg-gray-200 px-4 py-2 text-xl hover:border-orange dark:bg-dark-200 md:space-x-3"
+              >
+                <AiFillProject /> <span>Project</span>
+              </a>
+            </div>
+          </div>
+
+          <button
+            onClick={() => setShowDetail(false)}
+            className="focus:outline-none absolute right-3 top-3 rounded-full border-2 bg-gray-200 p-1 hover:border-orange dark:bg-dark-200"
+          >
+            <MdClose size={30} />
+          </button>
+        </div>
+      )}
+    </motion.div>
+  );
+};
 
 export default ProjectCard;

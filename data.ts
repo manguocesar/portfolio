@@ -8,42 +8,42 @@ import { BsCircleFill } from 'react-icons/bs';
 
 export const services: Service[] = [
   {
+    Icon: MdDeveloperMode,
+    title: 'Web, iOS & Andoid',
+    about: 'SaaS, Ecommerce, Social Media, Admin Dashboards, ... all SEO-friendly & multiplateform',
+  },
+  {
     Icon: RiComputerLine,
     title: 'Frontend Development',
     about:
-      'Creating efficient & user-friendly frontends with <b>ReactJS</b> & <b>CSS</b> frameworks ',
+      'Creating efficient & user-friendly frontends with NextJS & TailwindCSS',
   },
   {
     Icon: FaServer,
     title: 'Backend Development',
     about:
-      'Create REST APIs & databases using <b>ExpressJS</b> & <b>MongoDB</b>',
+      'Create REST & GraphQL APIs with SQL databases',
   },
   {
     Icon: FaBusinessTime,
     title: 'Business skills',
     about:
-      'Experience with <b>sales</b>, <b>HR</b> & <b>management</b> assignments',
-  },
-  {
-    Icon: MdDeveloperMode,
-    title: 'Freelance Coder',
-    about: '<b>Hourly rate</b> &/or <b>scope based</b>',
+      'Sales, HR & PM experiences',
   },
   {
     Icon: AiOutlineAntDesign,
-    title: 'UI/UX designer',
-    about: 'User interface designer using <b>Figma</b>  and  <b>Framer</b> ',
+    title: 'Freelance Coder',
+    about: 'Hourly rate &/or scope based',
   },
   {
     Icon: BiWorld,
     title: 'International',
     about:
-      '<b>English</b>, <b>French</b>, <b>Chinese</b> & <b>Spanish</b> working communication',
+      'English, French, Chinese & Spanish working communication',
   },
 ];
 
-export const languages: Skill[] = [
+export const technos: Skill[] = [
   {
     Icon: BsCircleFill,
     name: 'React/Next',
@@ -51,56 +51,41 @@ export const languages: Skill[] = [
   },
   {
     Icon: BsCircleFill,
-    name: 'React Native',
-    level: '75',
+    name: 'ReactNative',
+    level: '80',
   },
-  // {
-  //   Icon: BsCircleFill,
-  //   name: "Vue",
-  //   level: "50",
-  // },
   {
     Icon: BsCircleFill,
     name: 'Typescript',
-    level: '60',
+    level: '80',
   },
   {
     Icon: BsCircleFill,
     name: 'TailwindCss',
+    level: '85',
+  },
+  {
+    Icon: BsCircleFill,
+    name: 'ExpressJS',
     level: '70',
   },
   {
     Icon: BsCircleFill,
-    name: 'MaterialUI',
-    level: '65',
-  },
-  {
-    Icon: BsCircleFill,
-    name: 'Express',
-    level: '70',
-  },
-  {
-    Icon: BsCircleFill,
-    name: 'MongoDB',
+    name: 'PostGreSQL',
     level: '60',
-  },
-  {
-    Icon: BsCircleFill,
-    name: 'ReactThreeFiber',
-    level: '50',
-  },
+  }
 ];
 
 export const tools: Skill[] = [
   {
     Icon: BsCircleFill,
     name: 'Git/Github',
-    level: '85',
+    level: '90',
   },
   {
     Icon: BsCircleFill,
     name: 'Vercel',
-    level: '65',
+    level: '80',
   },
   {
     Icon: BsCircleFill,
@@ -110,7 +95,7 @@ export const tools: Skill[] = [
   {
     Icon: BsCircleFill,
     name: 'Expo',
-    level: '70',
+    level: '80',
   },
   {
     Icon: BsCircleFill,
@@ -120,7 +105,7 @@ export const tools: Skill[] = [
   {
     Icon: BsCircleFill,
     name: 'Figma',
-    level: '45',
+    level: '60',
   },
 ];
 
@@ -132,7 +117,7 @@ export const projects: Project[] = [
     deployed_url:
       'https://play.google.com/store/apps/details?id=ch.redilink.firstapp&hl=en&gl=US',
     github_url: 'https://github.com/RediLink',
-    category: ['react native', 'express', 'headlessCMS', 'mongo'],
+    category: ['reactNative', 'express', 'CMS', 'mongo'],
     key_techs: [
       'React Native',
       'React Admin',
@@ -147,7 +132,7 @@ export const projects: Project[] = [
     image_path: '/images/projects/meldd.png',
     deployed_url: 'https://apps.apple.com/fr/app/meldd/id6444099763',
     github_url: 'https://github.com/TheProlog/meldd_mono',
-    category: ['react native', 'typescript', 'graphQL', 'postGreSQL'],
+    category: ['reactNative', 'typescript', 'graphQL', 'postGreSQL'],
     key_techs: [
       'React Native',
       'expo',
@@ -161,9 +146,9 @@ export const projects: Project[] = [
     name: "Cesar's Portfolio",
     description: 'Introducing myself with the tech I love',
     image_path: '/images/projects/portfolio.png',
-    deployed_url: '',
+    deployed_url: 'https://cesarhertz.com',
     github_url: 'https://github.com/manguocesar/portfolio',
-    category: ['react', 'typescript', 'next', 'tailwindcss'],
+    category: ['react', 'typescript', 'nextJS', 'tailwindcss'],
     key_techs: [
       'Next',
       'Typescript',
@@ -178,7 +163,7 @@ export const projects: Project[] = [
     image_path: '/images/projects/pola.jpg',
     deployed_url: '',
     github_url: 'https://github.com/balconia/mobileApp',
-    category: ['react native', 'expo'],
+    category: ['reactNative', 'expo'],
     key_techs: ['React Native', 'expo'],
   },
   {
@@ -187,7 +172,7 @@ export const projects: Project[] = [
     image_path: '/images/projects/chipedin.png',
     deployed_url: 'https://chipedin.com/',
     github_url: 'https://github.com/Chipedin/next_app',
-    category: ['next', 'tailwindcss', 'GoogleSpreadsheet'],
+    category: ['nextJS', 'tailwindcss', 'GoogleSpreadsheet'],
     key_techs: ['Next', 'Tailwindcss', 'Framer Motion', 'GoogleSpreadsheet'],
   },
   {
@@ -204,7 +189,7 @@ export const projects: Project[] = [
     image_path: '/images/projects/italki.png',
     deployed_url: 'https://www.italki.com/',
     github_url: 'https://github.com',
-    category: ['next', 'react', 'tailwindcss', 'typescript'],
+    category: ['nextJS', 'react', 'tailwindcss', 'typescript'],
     description: 'Online language learning platform',
     key_techs: ['React', 'Next', 'Typescript', 'TailwindCss', 'i18next'],
   },
@@ -229,7 +214,7 @@ export const projects: Project[] = [
     image_path: '/images/projects/salmon.png',
     deployed_url: 'https://salmon-store.vercel.app/',
     github_url: 'https://github.com/manguocesar/salmon-store',
-    category: ['next', 'react', 'typescript', 'tailwindcss', 'headlessCMS'],
+    category: ['nextJS', 'react', 'typescript', 'tailwindcss', 'CMS'],
     description: 'Salmon E-commerce',
     key_techs: ['Next', 'Stripe', 'TailwindCss', 'SanityCMS'],
   },
@@ -238,7 +223,7 @@ export const projects: Project[] = [
     image_path: '/images/projects/frenchHouse.webp',
     deployed_url: 'https://frenchhouse.cn/',
     github_url: 'https://github.com/manguocesar/FrenchHouse',
-    category: ['next', 'react', 'typescript', 'tailwindcss', 'headlessCMS'],
+    category: ['nextJS', 'react', 'typescript', 'tailwindcss', 'CMS'],
     description: 'Interior design portfolio',
     key_techs: ['Next', 'typescript', 'TailwindCss', 'i18next'],
   },
