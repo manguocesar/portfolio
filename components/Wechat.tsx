@@ -13,6 +13,7 @@ const Wechat = () => {
           className="border-orange left-0 w-3/12 cursor-pointer border-2"
         >
           <Image
+          className=''
             width={300}
             height={300}
             alt="wechat-picture"
@@ -22,7 +23,7 @@ const Wechat = () => {
       ) : (
         <div>
           <AiFillWechat
-            className="h-8 w-8 cursor-pointer"
+            className="h-8 w-8 cursor-pointer transition duration-200 ease-in-out hover:scale-150"
             onClick={() => setWechat(true)}
           />
         </div>

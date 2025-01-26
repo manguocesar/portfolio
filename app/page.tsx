@@ -21,7 +21,7 @@ const Page = async () => {
         <div className="my-3 grid gap-6 sm:grid-cols-2">
           {services.map(service => (
             <div
-              className="dark:bg-dark-200 col-span-2 rounded-lg bg-gray-200 p-2 sm:col-span-1"
+              className="dark:bg-dark-200 col-span-2 rounded-lg bg-gray-200 p-2 sm:col-span-1 transition duration-200 ease-in-out hover:opacity-70"
               key={service.title}
             >
               <ServiceCard service={service} />

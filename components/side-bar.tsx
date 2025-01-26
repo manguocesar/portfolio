@@ -39,7 +39,7 @@ const Sidebar = () => {
             aria-label="Open Cesar's resume"
             href="/assets/2025 CV Cesar HERTZ Software.pdf"
             download="2025 CV Cesar HERTZ Software.pdf"
-            className="dark:bg-black-500 hover:border-orange dark:bg-dark-200 my-2 flex cursor-pointer items-center justify-center rounded-full border-2 bg-gray-200 px-2 py-1 sm:w-1/2 lg:w-full"
+            className="dark:bg-black-500 hover:border-orange dark:bg-dark-200 my-2 flex cursor-pointer items-center justify-center rounded-full border-2 bg-gray-200 px-2 py-1 sm:w-1/2 lg:w-full transition duration-200 ease-in-out hover:scale-105"
           >
             <span>Download Resume</span>
             <GiClick className="h-4 w-4 lg:w-1/6" />
@@ -55,7 +55,7 @@ const Sidebar = () => {
             aria-label="Open linkedin page"
             href="https://www.linkedin.com/in/hertz-cesar/"
           >
-            <AiFillLinkedin className="h-8 w-8 cursor-pointer" />
+            <AiFillLinkedin className="h-8 w-8 cursor-pointer transition duration-200 ease-in-out hover:scale-150" />
           </a>
         </div>
         <div>
@@ -64,7 +64,7 @@ const Sidebar = () => {
             aria-label="Open Cesar's github page"
             href="https://github.com/manguocesar"
           >
-            <AiFillGithub className="h-8 w-8 cursor-pointer" />{' '}
+            <AiFillGithub className="h-8 w-8 cursor-pointer transition duration-200 ease-in-out hover:scale-150" />{' '}
           </a>
         </div>
       </div>
