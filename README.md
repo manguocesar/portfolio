@@ -19,6 +19,7 @@ Hosted with [Vercel](https://vercel.com/)
 
 ## Upcoming features
 -- loading.js files
+-- mobile first
 -- resume & project route don't reload the whole page
 0. move from NextJs page router to app router - Next15^
 1. loading skeleton in app folder - project

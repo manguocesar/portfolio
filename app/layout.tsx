@@ -1,9 +1,15 @@
+
+import Navbar from '../components/nav-bar';
+import Sidebar from '../components/side-bar';
 import '../styles/globals.css';
+import { Inter } from 'next/font/google'
 
 import type { Metadata } from 'next';
 
+const inter = Inter({ subsets: ['latin'] })
+
 export const metadata: Metadata = {
-  title: 'Cesar Portfolio',
+  title: 'Cesar 何赛 Portfolio',
   description: 'Showcasing work & projects',
   generator: "Next.js",
   manifest: "/manifest.json",
@@ -17,14 +23,28 @@ export const metadata: Metadata = {
   ],
 };
 
-export default function RootLayout({
+export default function Layout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <body className="bg-gradient-to-tr from-blue-800 to-orange bg-fixed dark:from-dark-500 dark:to-dark-700 dark:text-white">
-      {children}
-    </body>
+    <html suppressHydrationWarning>
+      <body className="bg-gradient-to-tr from-blue-800 to-orange bg-fixed dark:from-dark-500 dark:to-dark-700 dark:text-white">
+        <div className={inter.className}>
+          <div className="my-8 grid grid-cols-12 gap-6 px-5 sm:px-20 md:mb-16 md:px-32 lg:mb-0 lg:px-36 xl:px-48">
+            <div
+              className="col-span-12 h-full rounded-2xl border bg-white p-4 text-center text-base shadow-custom-light dark:border-orange dark:bg-dark-500 dark:shadow-custom-dark lg:col-span-3"
+            >
+              <Sidebar />
+            </div>
+            <div className="col-span-12 flex flex-col overflow-hidden rounded-2xl border bg-white shadow-custom-light dark:border-orange dark:bg-dark-500 dark:shadow-custom-dark lg:col-span-9">
+              <Navbar />
+              {children}
+            </div>
+          </div>
+        </div>
+      </body>
+    </html>
   );
 }
