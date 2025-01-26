@@ -1,9 +1,11 @@
+'use server';
+
 import React from 'react'
 import ServiceCard from '../components/service-card';
 import { services } from '../data';
 
 
-const Page = () => {
+const Page = async () => {
     return (
         <div className="flex flex-grow flex-col px-6 pt-1">
             <h6 className="my-3 text-base font-medium">

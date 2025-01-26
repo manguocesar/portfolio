@@ -1,28 +1,30 @@
 'use server';
 
-// import { motion } from 'framer-motion';
 import Image from 'next/image';
-// import { useState } from 'react';
-import { AiFillGithub, AiFillLinkedin, AiFillWechat } from 'react-icons/ai';
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { GiClick, GiTie } from 'react-icons/gi';
 import { GoLocation } from 'react-icons/go';
+import Wechat from './Wechat';
+import Button from './Button';
 
 const Sidebar = () => {
-  // const [wechat, setWechat] = useState(false);
-
-  const changeTheme = () => {
-    document.documentElement.classList.toggle('dark')
-  };
-
   return (
     <div
     >
       <Image
-        src="/images/cesar.png"
+        src="/images/cesar.webp"
         alt="cesar hertz"
-        className="rounded-full border"
+        className="hidden md:block mx-auto rounded-full border"
         height={170}
         width={128}
+        priority
+      />
+      <Image
+        src="/images/cesar.webp"
+        alt="cesar hertz"
+        className="block md:hidden mx-auto rounded-full border"
+        height={150}
+        width={100}
         priority
       />
       <h3 className="mt-4 font-kaushan text-3xl font-medium tracking-wider">
@@ -44,23 +46,7 @@ const Sidebar = () => {
       </a>
 
       <div className="mx-auto my-4 flex w-10/12 justify-around text-orange md:w-full">
-        {/* {wechat ? (
-          <div
-          onClick={() => setWechat(false)}
-            className="absolute w-3/12 border-2 border-orange cursor-pointer">
-            <Image width={300} height={300} alt="wechat-picture" src="/images/wechat.jpg" />
-          </div>
-        ) : (
-          <div whileHover={{
-            scale: 1.4,
-            transition: { duration: 0.3 }
-          }}>
-            <AiFillWechat
-              className="h-8 w-8 cursor-pointer"
-              onClick={() => setWechat(true)}
-            />
-          </div>
-        )} */}
+        <Wechat />
         <div>
           <a target='_blank' aria-label="Open linkedin page" href="https://www.linkedin.com/in/hertz-cesar/">
             <AiFillLinkedin className="h-8 w-8 cursor-pointer" />
@@ -83,20 +69,8 @@ const Sidebar = () => {
         <a  aria-label="Open Cesar's Linkedin page" href='https://www.linkedin.com/in/hertz-cesar/' target="_blank" className="my-2">cesar.hertz@icloud.com</a>
         <p className="my-2">+ 45 31 80 92 75</p>
       </div>
-
-      <button
-        className="focus:outline-none w-8/12 cursor-pointer rounded-full bg-black bg-gradient-to-tr from-blue-800 to-orange px-5 py-2 text-white hover:scale-105"
-      // onClick={() => window.open('mailto:cesar.hertz@icloud.com')}
-      >
-        Email me
-      </button>
-      <button
-        // onClick={() => changeTheme()}
-        data-cy="change-theme"
-        className="focus:outline-none my-4 w-8/12 cursor-pointer rounded-full bg-black bg-gradient-to-tr from-blue-800 to-orange px-5 py-2 text-white hover:scale-105"
-      >
-        Day / Night Theme
-      </button>
+    <Button title="Email me"  />
+    <Button title="Day / Night Theme" />
     </div>
   );
 };
