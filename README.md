@@ -21,17 +21,16 @@ Hosted with [Vercel](https://vercel.com/)
 -- loading.js files
 -- mobile first
 -- resume & project route don't reload the whole page
-0. move from NextJs page router to app router - Next15^
-1. loading skeleton in app folder - project
-2. rtk query
+0. add animation with tailwind css
+1. loading skeleton & supense in app folder - project
+2. i18next
 3. vitestest testing
 4. files grouping structure
 5. zed managed forms
-6. i18next
+6. 3D assets
 7. graphQL layer
 8. postGreSQL fetched data
 9. redis fetched data
-10. 3D assets
 
 ## License
 
