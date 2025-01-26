@@ -71,7 +71,6 @@ const Sidebar = () => {
 
       <div
         className="dark:bg-black-500 dark:bg-dark-200 my-2 bg-gray-200 py-1 md:my-5 md:py-4"
-        // style={{ marginLeft: '-1rem', marginRight: '-1rem' }}
       >
         <div className="flex items-center justify-center">
           <GoLocation className="mr-2" /> <span>Copenhagen </span>
