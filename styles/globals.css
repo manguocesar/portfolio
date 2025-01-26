@@ -1,6 +1,14 @@
 @import "tailwindcss";
 
-body {
-  font-family: sans-serif;
-  color: #354358;
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-orange: #FF8C00;
+  --color-dark: #010101;
+  --color-dark-100: #010101;
+  --color-dark-200: #16181d;
+  --color-dark-300: #16181d;
+  --color-dark-500: #0f1115;
+  --color-dark-700: #202125;
+  --height-80: 80vh;
 }

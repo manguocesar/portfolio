@@ -23,6 +23,7 @@
     }
   },
   "dependencies": {
+    "@tailwindcss/postcss": "^4.0.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "dotenv": "^16.4.7",
