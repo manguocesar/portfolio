@@ -13,7 +13,7 @@ const Wechat = () => {
           className="border-orange left-0 w-3/12 cursor-pointer border-2"
         >
           <Image
-          className=''
+            className=""
             width={300}
             height={300}
             alt="wechat-picture"
