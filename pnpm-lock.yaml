@@ -163,7 +163,7 @@ importers:
         specifier: ^8.5.0
         version: 8.5.1(prettier@3.4.2)
       tailwindcss:
-        specifier: ^2.0.2
+        specifier: ^2.2.19
         version: 2.2.19(autoprefixer@10.4.20(postcss@8.5.1))(postcss@8.5.1)
       typescript:
         specifier: ^4.5.2
