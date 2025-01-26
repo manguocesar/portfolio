@@ -22,8 +22,8 @@ export const metadata: Metadata = {
   manifest: "/manifest.json",
   keywords: ["nextjs", "next15", "pwa", "next-pwa"],
   icons: [
-    { rel: "apple-touch-icon", url: "icon-192x192.png" },
-    { rel: "icon", url: "icon-192x192.png" },
+    { rel: "apple-touch-icon", url: "/imageLaptop.webp" },
+    { rel: "icon", url: "/imageLaptop.webp" },
   ],
 };
 
