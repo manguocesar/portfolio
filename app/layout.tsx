@@ -9,7 +9,11 @@ import type { Metadata } from 'next';
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Cesar 何赛 Portfolio',
+  title: {
+    template: '%s | Dashboard',
+    default: 'Cesar 何赛 Portfolio',
+  },
+  metadataBase: new URL('https://cesarhertz.com'),
   description: 'Showcasing work & projects',
   generator: "Next.js",
   manifest: "/manifest.json",
