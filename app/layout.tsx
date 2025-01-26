@@ -4,9 +4,12 @@ import Sidebar from '../components/side-bar';
 import '../styles/globals.css';
 import { Inter } from 'next/font/google'
 
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap'
+})
 
 export const metadata: Metadata = {
   title: {
@@ -18,14 +21,19 @@ export const metadata: Metadata = {
   generator: "Next.js",
   manifest: "/manifest.json",
   keywords: ["nextjs", "next15", "pwa", "next-pwa"],
-  themeColor: [{ media: "(prefers-color-scheme: dark)", color: "#fff" }],
-  viewport:
-    "minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover",
   icons: [
     { rel: "apple-touch-icon", url: "icon-192x192.png" },
     { rel: "icon", url: "icon-192x192.png" },
   ],
 };
+
+export const viewport: Viewport = {
+  themeColor: [{ media: "(prefers-color-scheme: dark)", color: "#fff" }],
+  width: "device-width",
+  initialScale: 1,
+  minimumScale: 1,
+  viewportFit: "cover",
+}
 
 export default function Layout({
   children,
