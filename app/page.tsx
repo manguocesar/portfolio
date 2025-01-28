@@ -1,8 +1,9 @@
 'use server';
 
-import React from 'react';
+import React, { Suspense } from 'react';
 import ServiceCard from '../components/service-card';
 import { services } from '../data';
+import Shape from '../components/shape';
 
 const introduction =
   'After 6 years between Europe China in the web industry, I wish to take on agile, innovative ambitious projects. A to Z tech projects with close user involvement are the most fulfilling. Through a dozen MERN stack projects, I have contributed to different architectures, designs and methods. I wish to focus on projects that have a positive impact and great growth potential.';
@@ -10,9 +11,16 @@ const introduction =
 const Page = async () => {
   return (
     <div className="flex flex-grow flex-col px-6 pt-1">
-      <h6 className="my-3 hidden text-base font-medium sm:block">
-        {introduction}
-      </h6>
+      <div className="flex flex-row">
+        <h6 className="xl:10/12 my-3 hidden w-7/12 text-base font-medium md:block md:w-7/12 lg:w-9/12">
+          {introduction}
+        </h6>
+        <div className="xl:2/12 hidden h-54 md:block md:w-5/12 lg:h-44 lg:w-3/12">
+          <Suspense fallback="loading...">
+            <Shape />
+          </Suspense>
+        </div>
+      </div>
       <div
         className="dark:bg-dark-100 flex-grow bg-gray-400 p-4 sm:mt-5"
         style={{ marginLeft: '-1.5rem', marginRight: '-1.5rem' }}
