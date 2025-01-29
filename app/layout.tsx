@@ -37,17 +37,13 @@ export const viewport: Viewport = {
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className="to-orange dark:from-dark-100 dark:to-dark-700 bg-gradient-to-tr from-blue-800 bg-fixed dark:text-white">
-        <div className={inter.className}>
-          <div className="my-8 grid grid-cols-12 gap-6 px-5 md:mb-16 md:px-32 lg:mb-0 lg:px-10 lg:pb-5 xl:px-48">
-            <div className="shadow-custom-light dark:border-orange dark:bg-dark-500 dark:shadow-custom-dark col-span-12 h-full rounded-2xl border bg-white py-4 text-center text-base lg:col-span-3">
-              <Sidebar />
-            </div>
-            <div className="shadow-custom-light dark:border-orange dark:bg-dark-500 dark:shadow-custom-dark col-span-12 flex flex-col overflow-hidden rounded-2xl border bg-white lg:col-span-9">
-              <Navbar />
-              {children}
-            </div>
-          </div>
+      <body
+        className={`${inter.className} to-orange dark:from-dark-100 dark:to-dark-700 my-8 grid grid-cols-12 gap-6 bg-gradient-to-tr from-blue-800 bg-fixed px-5 md:mb-16 md:px-32 lg:mb-0 lg:px-10 lg:pb-5 xl:px-48 dark:text-white`}
+      >
+        <Sidebar />
+        <div className="shadow-custom-light dark:border-orange dark:bg-dark-500 dark:shadow-custom-dark col-span-12 flex flex-col overflow-hidden rounded-2xl border bg-white lg:col-span-9">
+          <Navbar />
+          {children}
         </div>
       </body>
     </html>

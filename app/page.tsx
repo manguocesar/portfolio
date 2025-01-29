@@ -10,8 +10,8 @@ const introduction =
 
 const Page = async () => {
   return (
-    <div className="flex flex-grow flex-col px-6 pt-1">
-      <div className="flex flex-row">
+    <div className="flex flex-grow flex-col pt-1">
+      <div className="flex flex-row px-6">
         <h6 className="xl:10/12 my-3 hidden w-7/12 text-base font-medium md:block md:w-7/12 lg:w-9/12">
           {introduction}
         </h6>
@@ -21,10 +21,7 @@ const Page = async () => {
           </Suspense>
         </div>
       </div>
-      <div
-        className="dark:bg-dark-100 flex-grow bg-gray-400 p-4 sm:mt-5"
-        style={{ marginLeft: '-1.5rem', marginRight: '-1.5rem' }}
-      >
+      <div className="dark:bg-dark-100 flex-grow bg-gray-400 p-4 sm:mt-5">
         <h4 className="my-1 text-2xl font-bold tracking-wide">What I do:</h4>
         <div className="my-3 grid gap-6 sm:grid-cols-2">
           {services.map(service => (

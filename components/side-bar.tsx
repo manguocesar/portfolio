@@ -9,27 +9,19 @@ import Button from './button';
 
 const Sidebar = () => {
   return (
-    <div className="">
+    <div className="shadow-custom-light dark:border-orange dark:bg-dark-500 dark:shadow-custom-dark col-span-12 h-full rounded-2xl border bg-white py-4 text-center text-base lg:col-span-3">
       <div className="m-2 flex flex-col">
         <Image
           src="/images/cesar.png"
           alt="cesar hertz"
-          className="mx-auto hidden rounded-full border sm:block"
+          className="mx-auto rounded-full border"
           height={170}
           width={128}
           priority
         />
-        <Image
-          src="/images/cesar.png"
-          alt="cesar hertz"
-          className="mx-auto block rounded-full border sm:hidden"
-          height={140}
-          width={95}
-          priority
-        />
         <div className="flex flex-col justify-end sm:items-center">
           <h3 className="font-kaushan text-center text-3xl font-medium tracking-wider md:mt-4 md:text-center">
-            <span className="text-orange">Cesar</span> 何赛
+            <span className="text-orange">Cesar</span>
           </h3>
           <p className="dark:bg-black-500 dark:bg-dark-200 flex items-center justify-center rounded-full text-lg font-bold italic md:mb-3 md:px-2">
             Web Developer

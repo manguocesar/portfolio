@@ -8,8 +8,8 @@ const Shape = () => {
   return (
     <Canvas>
       <Sphere
-        onPointerOver={event => setHover(true)}
-        onPointerOut={event => setHover(false)}
+        onPointerOver={() => setHover(true)}
+        onPointerOut={() => setHover(false)}
         args={[1, 50, 50]}
         scale={2}
       >
