@@ -21,7 +21,7 @@ const Sidebar = () => {
         />
         <div className="flex flex-col justify-end sm:items-center">
           <h3 className="font-kaushan text-center text-3xl font-medium tracking-wider md:mt-4 md:text-center">
-            <span className="text-orange">Cesar</span>
+            <span className="text-orange">Cesar 何赛</span>
           </h3>
           <p className="dark:bg-black-500 dark:bg-dark-200 flex items-center justify-center rounded-full text-lg font-bold italic md:mb-3 md:px-2">
             Web Developer
