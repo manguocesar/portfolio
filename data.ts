@@ -9,8 +9,9 @@ import { BsCircleFill } from 'react-icons/bs';
 export const services: Service[] = [
   {
     Icon: MdDeveloperMode,
-    title: 'Web, iOS & Andoid',
-    about: 'SaaS, Ecommerce, Social Media, Admin Dashboards, ... all SEO-friendly & multiplateform',
+    title: 'Web, iOS & Android',
+    about:
+      'SaaS, Ecommerce, Social Media, Admin Dashboards, ... all SEO-friendly & multiplateform',
   },
   {
     Icon: RiComputerLine,
@@ -21,14 +22,12 @@ export const services: Service[] = [
   {
     Icon: FaServer,
     title: 'Backend Development',
-    about:
-      'Create REST & GraphQL APIs with SQL databases',
+    about: 'Create REST & GraphQL APIs with SQL databases',
   },
   {
     Icon: FaBusinessTime,
     title: 'Business skills',
-    about:
-      'Sales, HR & PM experiences',
+    about: 'Sales, HR & PM experiences',
   },
   {
     Icon: AiOutlineAntDesign,
@@ -38,8 +37,7 @@ export const services: Service[] = [
   {
     Icon: BiWorld,
     title: 'International',
-    about:
-      'English, French, Chinese & Spanish working communication',
+    about: 'English, French, Chinese & Spanish working communication',
   },
 ];
 
@@ -73,7 +71,7 @@ export const technos: Skill[] = [
     Icon: BsCircleFill,
     name: 'PostGreSQL',
     level: '60',
-  }
+  },
 ];
 
 export const tools: Skill[] = [
