@@ -4,13 +4,13 @@ import Bar from '../../components/namebar';
 
 const Page = () => {
   const softwareIntro =
-    'Lucky to work with cutting edge technologies and talented engineers. The digital communities in Copenhagen, Lyon, Shanghai and Brussels have opened the door to the latest technologies & innovations, inspiring me to work with like-minded entrepreneurs.';
+    'Throughout my career across Copenhagen, Lyon, Shanghai, and Brussels, I\'ve had the privilege of working with cutting-edge technologies and exceptional engineering teams. These diverse tech hubs have exposed me to innovative approaches and best practices in software development. My experience in these vibrant digital communities has shaped my expertise in modern web technologies and strengthened my passion for building impactful solutions with forward-thinking teams.';
 
   return (
     <div className="px-6 py-2">
-      <div className="grid gap-6 sm:grid-cols-2">
-        <div>
-          <h5 className="hidden text-2xl font-bold sm:my-3 sm:block">
+      <div className="grid gap-5 sm:grid-cols-8">
+        <div className="col-span-3">
+          <h5 className="hidden text-2xl font-bold sm:my-3 sm:block transition duration-500 ease-in-out hover:text-orange">
             Education
           </h5>
           <div className="">
@@ -24,17 +24,15 @@ const Page = () => {
             </p>
           </div>
         </div>
-        <div className="hidden sm:block">
-          <h5 className="text-2xl font-bold sm:my-3">Software Developer</h5>
-          <div className="">
-            <p className="my-3 text-sm">{softwareIntro}</p>
-          </div>
+        <div className="hidden sm:block col-span-5">
+          <h5 className="text-2xl font-bold sm:my-3 transition duration-500 ease-in-out hover:text-orange">Software Developer</h5>
+          <p className="my-3 text-md transition duration-500 ease-in-out hover:text-gray-500">{softwareIntro}</p>
         </div>
       </div>
 
       <div className="grid sm:grid-cols-2 sm:gap-9">
         <div>
-          <h5 className="my-3 text-2xl font-bold">Technos</h5>
+          <h5 className="my-3 text-2xl font-bold transition duration-500 ease-in-out hover:text-orange">Technos</h5>
           <div className="my-2">
             {technos.map((tech, index) => (
               <Bar value={tech} key={index} />
@@ -43,7 +41,7 @@ const Page = () => {
         </div>
 
         <div>
-          <h5 className="my-3 text-2xl font-bold">Tools & Softwares</h5>
+          <h5 className="my-3 text-2xl font-bold transition duration-500 ease-in-out hover:text-orange">Tools & Softwares</h5>
           <div className="my-2">
             {tools.map((tool, index) => (
               <Bar value={tool} key={index} />
