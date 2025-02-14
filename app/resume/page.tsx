@@ -4,7 +4,14 @@ import Bar from '../../components/namebar';
 
 const introduction = (
   <p className="text-md my-3 transition duration-500 ease-in-out hover:text-gray-500">
-    Throughout my career across <strong>Copenhagen, Lyon, Shanghai, and Brussels,</strong> I've had the privilege of working with cutting-edge technologies and exceptional engineering teams. These diverse tech hubs have exposed me to innovative approaches and best practices in software development. My experience in these vibrant digital communities has shaped my expertise in modern web technologies and strengthened my passion for building impactful solutions with forward-thinking teams.
+    Throughout my career across{' '}
+    <strong>Copenhagen, Lyon, Shanghai, and Brussels,</strong> I&apos;ve had the
+    privilege of working with cutting-edge technologies and exceptional
+    engineering teams. These diverse tech hubs have exposed me to innovative
+    approaches and best practices in software development. My experience in
+    these vibrant digital communities has shaped my expertise in modern web
+    technologies and strengthened my passion for building impactful solutions
+    with forward-thinking teams.
   </p>
 );
 
