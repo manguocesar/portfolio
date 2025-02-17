@@ -3,14 +3,14 @@
 import React, { Suspense } from 'react';
 import { services } from './data';
 import { Shape } from './components/shape';
-import { Introduction } from './components/introduction';
+import { Intro } from './components/intro';
 import { Services } from './components/service';
 
 const Page = async () => {
   return (
     <Suspense fallback="Loading...">
       <div className="flex flex-row px-6">
-        <Introduction />
+        <Intro />
         <Shape />
       </div>
       <Services services={services} />

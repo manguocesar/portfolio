@@ -1,4 +1,4 @@
-export const Introduction = () => (
+export const Intro = () => (
   <h3 className="xl:10/12 my-3 hidden w-7/12 text-base font-medium transition duration-1000 ease-in-out hover:text-gray-500 md:block md:w-7/12 lg:w-9/12">
     With <strong>6 years of experience</strong> in the web industry across{' '}
     <strong>Europe and China</strong>, I specialize in developing innovative,
