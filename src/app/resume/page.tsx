@@ -1,9 +1,9 @@
 import React from 'react';
-import { technos, tools } from '../../data';
-import Bar from '../../components/namebar';
+import { technos, tools } from '../data';
+import Bar from '../components/namebar';
 
 const introduction = (
-  <p className="text-md my-3 transition duration-500 ease-in-out hover:text-gray-500">
+  <p className="text-md my-3 transition duration-1000 ease-in-out hover:text-gray-1000">
     Throughout my career across{' '}
     <strong>Copenhagen, Lyon, Shanghai, and Brussels,</strong> I&apos;ve had the
     privilege of working with cutting-edge technologies and exceptional
@@ -20,7 +20,7 @@ const Page = () => {
     <div className="px-6 py-2">
       <div className="grid gap-5 sm:grid-cols-8">
         <div className="col-span-3">
-          <h5 className="hover:text-orange hidden text-2xl font-bold transition duration-500 ease-in-out sm:my-3 sm:block">
+          <h5 className="hover:text-orange hidden text-2xl font-bold transition duration-1000 ease-in-out sm:my-3 sm:block">
             Education
           </h5>
           <div className="">
@@ -35,7 +35,7 @@ const Page = () => {
           </div>
         </div>
         <div className="col-span-5 hidden sm:block">
-          <h5 className="hover:text-orange text-2xl font-bold transition duration-500 ease-in-out sm:my-3">
+          <h5 className="hover:text-orange text-2xl font-bold transition duration-1000 ease-in-out sm:my-3">
             Software Developer
           </h5>
           {introduction}
@@ -44,7 +44,7 @@ const Page = () => {
 
       <div className="grid sm:grid-cols-2 sm:gap-9">
         <div>
-          <h5 className="hover:text-orange my-3 text-2xl font-bold transition duration-500 ease-in-out">
+          <h5 className="hover:text-orange my-3 text-2xl font-bold transition duration-1000 ease-in-out">
             Technos
           </h5>
           <div className="my-2">
@@ -55,7 +55,7 @@ const Page = () => {
         </div>
 
         <div>
-          <h5 className="hover:text-orange my-3 text-2xl font-bold transition duration-500 ease-in-out">
+          <h5 className="hover:text-orange my-3 text-2xl font-bold transition duration-1000 ease-in-out">
             Tools & Softwares
           </h5>
           <div className="my-2">

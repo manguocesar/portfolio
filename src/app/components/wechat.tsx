@@ -23,7 +23,7 @@ const Wechat = () => {
       ) : (
         <div>
           <AiFillWechat
-            className="h-8 w-8 cursor-pointer transition duration-200 ease-in-out hover:scale-150"
+            className="h-8 w-8 cursor-pointer transition duration-1000 ease-in-out hover:scale-150"
             onClick={() => setWechat(true)}
           />
         </div>

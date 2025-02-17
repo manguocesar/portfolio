@@ -21,11 +21,11 @@ const Sidebar = () => {
         />
         <div className="flex flex-col justify-end sm:items-center">
           <h3 className="font-kaushan text-center text-3xl font-medium tracking-wider md:mt-4 md:text-center">
-            <span className="text-orange transition duration-500 ease-in-out hover:text-black">
+            <span className="text-orange transition duration-1000 ease-in-out hover:text-white">
               Cesar 何赛
             </span>
           </h3>
-          <p className="dark:bg-black-500 dark:bg-dark-200 hover:text-orange flex items-center justify-center rounded-full text-lg font-bold italic transition duration-200 ease-in-out md:mb-3 md:px-2">
+          <p className="dark:bg-black-500 dark:bg-dark-200 hover:text-orange flex items-center justify-center rounded-full text-lg font-bold italic transition duration-1000 ease-in-out md:mb-3 md:px-2">
             Web Developer
             <GiTie className="h-6 w-6" />
           </p>
@@ -34,7 +34,7 @@ const Sidebar = () => {
               aria-label="Open Cesar's resume"
               href="/assets/2025 CV Cesar HERTZ Software.pdf"
               download="2025 CV Cesar HERTZ Software.pdf"
-              className="dark:bg-black-500 hover:border-orange dark:bg-dark-200 mx-2 my-2 flex cursor-pointer items-center justify-center rounded-full border-2 bg-gray-200 px-2 py-1 transition duration-200 ease-in-out hover:scale-105 sm:w-1/2 lg:w-full"
+              className="dark:bg-black-500 hover:border-orange dark:bg-dark-200 mx-2 my-2 flex cursor-pointer items-center justify-center rounded-full border-2 bg-gray-200 px-2 py-1 transition duration-1000 ease-in-out hover:scale-105 sm:w-1/2 lg:w-full"
             >
               <span>Download Resume</span>
               <GiClick className="h-4 w-4 lg:w-1/6" />
@@ -51,7 +51,7 @@ const Sidebar = () => {
             aria-label="Open linkedin page"
             href="https://www.linkedin.com/in/hertz-cesar/"
           >
-            <AiFillLinkedin className="h-8 w-8 cursor-pointer transition duration-200 ease-in-out hover:scale-150" />
+            <AiFillLinkedin className="h-8 w-8 cursor-pointer transition duration-1000 ease-in-out hover:scale-150" />
           </a>
         </div>
         <div>
@@ -60,19 +60,19 @@ const Sidebar = () => {
             aria-label="Open Cesar's github page"
             href="https://github.com/manguocesar"
           >
-            <AiFillGithub className="h-8 w-8 cursor-pointer transition duration-200 ease-in-out hover:scale-150" />{' '}
+            <AiFillGithub className="h-8 w-8 cursor-pointer transition duration-1000 ease-in-out hover:scale-150" />{' '}
           </a>
         </div>
       </div>
 
       <div className="dark:bg-black-500 dark:bg-dark-200 my-2 bg-gray-200 py-1 md:my-5 md:py-4">
-        <div className="flex items-center justify-center transition duration-500 hover:text-white">
+        <div className="flex items-center justify-center transition duration-1000 hover:text-white">
           <GoLocation className="mr-2" /> <span>Copenhagen </span>
         </div>
-        <p className="my-2 transition duration-500 hover:text-white">
+        <p className="my-2 transition duration-1000 hover:text-white">
           cesar.hertz@icloud.com
         </p>
-        <p className="my-2 transition duration-500 hover:text-white">
+        <p className="my-2 transition duration-1000 hover:text-white">
           + 45 31 80 92 75
         </p>
       </div>
