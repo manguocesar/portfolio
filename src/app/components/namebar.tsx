@@ -1,10 +1,9 @@
 import { FunctionComponent } from 'react';
 
 import { Skill } from '../types';
-import { CircleCheckBig } from 'lucide-react';
 
 const Bar: FunctionComponent<{ value: Skill }> = ({
-  value: { level, name },
+  value: { Icon, level, name },
 }) => {
   const bar_width = `${level}%`;
   return (
@@ -15,7 +14,7 @@ const Bar: FunctionComponent<{ value: Skill }> = ({
           width: bar_width,
         }}
       >
-        <CircleCheckBig className="mr-3" /> {name}
+        <Icon className="mr-3" /> {name}
       </div>
     </div>
   );

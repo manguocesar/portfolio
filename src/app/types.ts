@@ -1,11 +1,13 @@
+import { FunctionComponent } from 'react';
+
 export interface Service {
-  Icon: React.ReactNode;
+  Icon: FunctionComponent<{ className: string }>;
   title: string;
   about: string;
 }
 
 export interface Skill {
-  Icon: React.ReactNode;
+  Icon: FunctionComponent<{ className: string }>;
   name: string;
   level: string;
 }
