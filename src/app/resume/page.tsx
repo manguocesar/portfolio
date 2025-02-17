@@ -3,7 +3,7 @@ import { technos, tools } from '../data';
 import Bar from '../components/namebar';
 
 const introduction = (
-  <p className="text-md my-3 transition duration-1000 ease-in-out hover:text-gray-1000">
+  <p className="hover:text-gray-1000·my-3·transition·duration-1000·ease-in-out">
     Throughout my career across{' '}
     <strong>Copenhagen, Lyon, Shanghai, and Brussels,</strong> I&apos;ve had the
     privilege of working with cutting-edge technologies and exceptional

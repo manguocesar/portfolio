@@ -21,7 +21,7 @@ const Sidebar = () => {
         />
         <div className="flex flex-col justify-end sm:items-center">
           <h3 className="font-kaushan text-center text-3xl font-medium tracking-wider md:mt-4 md:text-center">
-            <span className="text-orange transition duration-1000 ease-in-out ">
+            <span className="text-orange transition duration-1000 ease-in-out">
               Cesar 何赛
             </span>
           </h3>
@@ -34,7 +34,7 @@ const Sidebar = () => {
               aria-label="Open Cesar's resume"
               href="/assets/2025 CV Cesar HERTZ Software.pdf"
               download="2025 CV Cesar HERTZ Software.pdf"
-              className="dark:text-black dark:border-orange hover:border-orange m-2 flex cursor-pointer items-center justify-center rounded-full border-2 bg-gray-200 px-2 py-1 transition duration-1000 ease-in-out hover:scale-105 sm:w-1/2 lg:w-full"
+              className="dark:border-orange hover:border-orange m-2 flex cursor-pointer items-center justify-center rounded-full border-2 bg-gray-200 px-2 py-1 transition duration-1000 ease-in-out hover:scale-105 sm:w-1/2 lg:w-full dark:text-black"
             >
               <span>Download Resume</span>
               <GiClick className="h-4 w-4 lg:w-1/6" />
@@ -65,7 +65,7 @@ const Sidebar = () => {
         </div>
       </div>
 
-      <div className=" dark:text-black my-2 bg-gray-200 py-1 md:my-5 md:py-4">
+      <div className="my-2 bg-gray-200 py-1 md:my-5 md:py-4 dark:text-black">
         <div className="flex items-center justify-center transition duration-1000 hover:text-white">
           <GoLocation className="mr-2" /> <span>Copenhagen </span>
         </div>
