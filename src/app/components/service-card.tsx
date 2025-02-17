@@ -1,7 +1,7 @@
 import { FunctionComponent } from 'react';
 import { Service } from '../types';
 
-const ServiceCard: FunctionComponent<{ service: Service }> = ({
+export const ServiceCard: FunctionComponent<{ service: Service }> = ({
   service: { Icon, title, about },
 }) => {
   return (
@@ -14,5 +14,3 @@ const ServiceCard: FunctionComponent<{ service: Service }> = ({
     </div>
   );
 };
-
-export default ServiceCard;
