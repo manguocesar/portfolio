@@ -13,3 +13,10 @@
   --color-dark-700: #202125;
   --height-80: 80vh;
 }
+
+.layout-body {
+  @apply to-orange dark:from-dark-100 dark:to-dark-700 my-8 grid grid-cols-12 gap-6 bg-gradient-to-tr from-blue-800 bg-fixed px-5 md:mb-16 md:px-32 lg:mb-0 lg:px-10 lg:pb-5 xl:px-32 dark:text-white;
+}
+.layout-content {
+  @apply dark:border-orange dark:bg-dark-500 col-span-12 flex flex-col overflow-hidden rounded-2xl border bg-white transition duration-1000 lg:col-span-9;
+}
