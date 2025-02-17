@@ -37,11 +37,11 @@ export const viewport: Viewport = {
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${inter.className} layout-body`}
-      >
+      <body className={`${inter.className} layout-body`}>
         <Sidebar />
-        <div className={`layout-content shadow-custom-light dark:shadow-custom-dark`}>
+        <div
+          className={`layout-content shadow-custom-light dark:shadow-custom-dark`}
+        >
           <Navbar />
           {children}
         </div>

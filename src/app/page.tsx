@@ -3,7 +3,7 @@
 import React, { Suspense } from 'react';
 import { services } from './data';
 import { Shape } from './components/shape';
-import { Introduction } from './components/Introduction';
+import { Introduction } from './components/introduction';
 import { Services } from './components/service';
 
 const Page = async () => {
