@@ -125,6 +125,15 @@ export const projects: Project[] = [
     ],
   },
   {
+    name: 'Seafood Ecommerce',
+    description: 'CRM & Ecommerce for seafood industry',
+    image_path: '/images/projects/mikaelhertz.jpg',
+    deployed_url: 'https://www.mikaelhertz.com/',
+    github_url: 'https://github.com/manguocesar/salmon',
+    category: ['nextJS', 'tailwindcss', 'CMS', 'node', 'typescript'],
+    key_techs: ['NextJS', 'NodeJS', 'TailwindCss', 'Stripe', 'Typescript'],
+  },
+  {
     name: 'Meldd',
     description: 'Consensus & research mobile app',
     image_path: '/images/projects/meldd.png',
