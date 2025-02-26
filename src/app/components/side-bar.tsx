@@ -34,7 +34,7 @@ const Sidebar = () => {
               aria-label="Open Cesar's resume"
               href="/assets/2025 CV Cesar HERTZ Software.pdf"
               download="2025 CV Cesar HERTZ Software.pdf"
-              className="dark:border-orange hover:border-orange w-9/12 sm:w-full m-auto flex cursor-pointer items-center justify-center rounded-full border-2 bg-gray-200 p-2 transition duration-1000 ease-in-out hover:scale-105  lg:w-full dark:text-black"
+              className="dark:border-orange hover:border-orange m-auto flex w-9/12 cursor-pointer items-center justify-center rounded-full border-2 bg-gray-200 p-2 transition duration-1000 ease-in-out hover:scale-105 sm:w-full lg:w-full dark:text-black"
             >
               <span>Download Resume</span>
               <GiClick className="h-4 w-4 lg:w-1/6" />

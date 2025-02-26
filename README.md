@@ -6,13 +6,13 @@
 4. [Hosting](#hosting)
 5. [Upcoming Features](#upcoming-features)
 
-
 ## <a name="introduction">⚙️ Introduction</a>
+
 Portfolio Next app to showcase freelance projects & web development skills
 
 ## <a name="tech-stack">⚙️ Tech Stack</a>
 
-- Next.js 15 app router 
+- Next.js 15 app router
 - Typescript 5
 - Tailwind CSS 4
 - Tanstack Query 5
@@ -23,25 +23,23 @@ Portfolio Next app to showcase freelance projects & web development skills
 ## <a name="quick-start">⚙️ Quick Start</a>
 
 1.  **Install the dependencies.**
+
     ```shell
     pnpm
     ```
 
-2.  **Run the app locally.**
-    ```shell
-    pnpm run dev
-    ```
-Open the browser at http://localhost:3000/
+2.  **Run the app locally.** `shell     pnpm run dev     ` Open the browser at
+    http://localhost:3000/
 
 ## <a name="hosting">⚙️ Hosting</a>
-Hosted with [Vercel](https://vercel.com/)
-Prod URL cesarhertz.com
+
+Hosted with [Vercel](https://vercel.com/) Prod URL cesarhertz.com
 
 ## <a name=upcoming-features">⚙️ Upcoming features</a>
--- loading.js files
--- mobile first
--- resume & project route don't reload the whole page
-0. add animation with tailwind css
+
+-- loading.js files -- mobile first -- resume & project route don't reload the
+whole page 0. add animation with tailwind css
+
 1. loading skeleton & supense in app folder - project
 2. i18next
 3. vitestest testing
