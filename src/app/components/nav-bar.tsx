@@ -29,7 +29,7 @@ const NavItem = ({ active, setActive, name, route }: NavbarProps) => {
   );
 };
 
-const Navbar = () => {
+export const Navbar = () => {
   const pathname = usePathname();
 
   const [active, setActive] = useState('');
@@ -83,5 +83,3 @@ const Navbar = () => {
     </motion.div>
   );
 };
-
-export default Navbar;

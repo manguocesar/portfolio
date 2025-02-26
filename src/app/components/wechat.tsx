@@ -3,7 +3,7 @@ import Image from 'next/image';
 import React from 'react';
 import { AiFillWechat } from 'react-icons/ai';
 
-const Wechat = () => {
+export const Wechat = () => {
   const [wechat, setWechat] = React.useState(false);
   return (
     <>
@@ -31,5 +31,3 @@ const Wechat = () => {
     </>
   );
 };
-
-export default Wechat;

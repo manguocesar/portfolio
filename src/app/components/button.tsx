@@ -6,7 +6,7 @@ const changeTheme = async () => {
   document.documentElement.classList.toggle('dark');
 };
 
-const Button = ({ title }: { title: string }) => {
+export const Button = ({ title }: { title: string }) => {
   return (
     <button
       onClick={() => {
@@ -21,5 +21,3 @@ const Button = ({ title }: { title: string }) => {
     </button>
   );
 };
-
-export default Button;

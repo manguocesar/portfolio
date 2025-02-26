@@ -1,5 +1,5 @@
-import Navbar from './components/nav-bar';
-import Sidebar from './components/side-bar';
+import { Navbar } from './components/nav-bar';
+import { Sidebar } from './components/side-bar';
 import './styles/globals.css';
 import { Inter } from 'next/font/google';
 

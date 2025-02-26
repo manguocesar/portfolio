@@ -4,10 +4,10 @@ import Image from 'next/image';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { GiClick, GiTie } from 'react-icons/gi';
 import { GoLocation } from 'react-icons/go';
-import Wechat from './wechat';
-import Button from './button';
+import { Wechat } from './wechat';
+import { Button } from './button';
 
-const Sidebar = () => {
+export const Sidebar = async () => {
   return (
     <div className="shadow-custom-light dark:border-orange dark:bg-dark-500 dark:shadow-custom-dark col-span-12 h-full rounded-2xl border bg-white py-4 text-center text-base lg:col-span-3">
       <div className="m-0">
@@ -19,9 +19,9 @@ const Sidebar = () => {
           width={128}
           priority
         />
-        <div className="flex flex-col justify-end sm:items-center">
+        <div className="flex flex-col justify-end w-10/12 sm:w-10/12 mx-auto">
           <h3 className="font-kaushan text-center text-3xl font-medium tracking-wider md:mt-4 md:text-center">
-            <span className="text-orange transition duration-1000 ease-in-out">
+            <span className="text-2xl lg:text-3xl text-orange transition duration-1000 ease-in-out">
               Cesar 何赛
             </span>
           </h3>
@@ -34,7 +34,7 @@ const Sidebar = () => {
               aria-label="Open Cesar's resume"
               href="/assets/2025 CV Cesar HERTZ Software.pdf"
               download="2025 CV Cesar HERTZ Software.pdf"
-              className="dark:border-orange hover:border-orange m-auto flex w-9/12 cursor-pointer items-center justify-center rounded-full border-2 bg-gray-200 p-2 transition duration-1000 ease-in-out hover:scale-105 sm:w-full lg:w-full dark:text-black"
+              className="dark:border-orange hover:border-orange m-auto flex w-11/12 md:w-full cursor-pointer items-center justify-center rounded-full border-2 bg-gray-200 p-2 transition duration-1000 ease-in-out hover:scale-105 sm:w-full lg:w-full dark:text-black"
             >
               <span>Download Resume</span>
               <GiClick className="h-4 w-4 lg:w-1/6" />
@@ -81,5 +81,3 @@ const Sidebar = () => {
     </div>
   );
 };
-
-export default Sidebar;

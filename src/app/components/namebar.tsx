@@ -2,7 +2,7 @@ import { FunctionComponent } from 'react';
 
 import { Skill } from '../types';
 
-const Bar: FunctionComponent<{ value: Skill }> = ({
+export const Bar: FunctionComponent<{ value: Skill }> = ({
   value: { Icon, level, name },
 }) => {
   const bar_width = `${level}%`;
@@ -19,4 +19,3 @@ const Bar: FunctionComponent<{ value: Skill }> = ({
     </div>
   );
 };
-export default Bar;

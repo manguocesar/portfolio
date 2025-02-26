@@ -17,7 +17,7 @@ export const NavItem: FunctionComponent<{
   );
 };
 
-const ProjectsNavbar: FunctionComponent<{
+export const ProjectsNavbar: FunctionComponent<{
   handlerFilterCategory: Function;
   active: string;
 }> = props => {
@@ -33,5 +33,3 @@ const ProjectsNavbar: FunctionComponent<{
     </div>
   );
 };
-
-export default ProjectsNavbar;
