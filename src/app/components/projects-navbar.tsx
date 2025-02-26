@@ -1,5 +1,4 @@
 import { FunctionComponent } from 'react';
-
 import { Category } from '../types';
 
 export const NavItem: FunctionComponent<{
@@ -7,7 +6,7 @@ export const NavItem: FunctionComponent<{
   handlerFilterCategory: Function;
   active: string;
 }> = ({ value, handlerFilterCategory, active }) => {
-  let className = 'capitalize font-semibold cursor-pointer hover:text-orange';
+  let className = 'capitalize text-center md:text-left font-semibold cursor-pointer hover:text-orange';
   if (active === value) className += ' text-orange';
 
   return (

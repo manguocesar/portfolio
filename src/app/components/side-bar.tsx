@@ -12,7 +12,7 @@ const Sidebar = () => {
     <div className="shadow-custom-light dark:border-orange dark:bg-dark-500 dark:shadow-custom-dark col-span-12 h-full rounded-2xl border bg-white py-4 text-center text-base lg:col-span-3">
       <div className="m-0">
         <Image
-          src="/images/cesar.png"
+          src="/images/cesar.jpg"
           alt="Cesar's image"
           className="mx-auto rounded-full border"
           height={170}

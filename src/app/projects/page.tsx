@@ -25,7 +25,7 @@ const Page = () => {
   };
 
   return (
-    <div className="px-5 py-2 sm:overflow-y-scroll lg:h-80">
+    <div className="px-3 py-2 sm:overflow-y-scroll lg:h-80">
       <ProjectsNavbar
         handlerFilterCategory={handlerFilterCategory}
         active={active}
