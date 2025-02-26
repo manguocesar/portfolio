@@ -5,7 +5,7 @@ import { useState } from 'react';
 import { ProjectsNavbar } from '../components/projects-navbar';
 import { Category } from '../types';
 import { projects as projectsData } from '../data';
-import ProjectCard from '../components/project-card';
+import { ProjectCard } from '../components/project-card';
 
 const Page = () => {
   const [projects, setProjects] = useState(projectsData);
