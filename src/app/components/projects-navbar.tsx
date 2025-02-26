@@ -14,14 +14,22 @@ const techValues = [
   'tailwindcss',
   'nextJS',
   'CMS',
-  'express'
+  'express',
 ];
 
-export const ProjectsNavbar: React.ComponentType<ProjectsNavbarProps> = ({ handlerFilterCategory, active }) => {
+export const ProjectsNavbar: React.ComponentType<ProjectsNavbarProps> = ({
+  handlerFilterCategory,
+  active,
+}) => {
   return (
     <div className="grid list-none grid-cols-3 gap-2 overflow-x-auto px-3 py-2 sm:flex sm:space-x-3">
       {techValues.map(value => (
-        <TechNav key={value} value={value as Category} handlerFilterCategory={handlerFilterCategory} active={active} />
+        <TechNav
+          key={value}
+          value={value as Category}
+          handlerFilterCategory={handlerFilterCategory}
+          active={active}
+        />
       ))}
     </div>
   );

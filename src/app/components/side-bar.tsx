@@ -19,9 +19,9 @@ export const Sidebar = () => {
           width={128}
           priority
         />
-        <div className="flex flex-col justify-end w-10/12 sm:w-10/12 mx-auto">
+        <div className="mx-auto flex w-10/12 flex-col justify-end sm:w-10/12">
           <h3 className="font-kaushan text-center text-3xl font-medium tracking-wider md:mt-4 md:text-center">
-            <span className="text-2xl lg:text-3xl text-orange transition duration-1000 ease-in-out">
+            <span className="text-orange text-2xl transition duration-1000 ease-in-out lg:text-3xl">
               Cesar 何赛
             </span>
           </h3>
@@ -34,7 +34,7 @@ export const Sidebar = () => {
               aria-label="Open Cesar's resume"
               href="/assets/2025 CV Cesar HERTZ Software.pdf"
               download="2025 CV Cesar HERTZ Software.pdf"
-              className="dark:border-orange hover:border-orange m-auto flex w-11/12 md:w-full cursor-pointer items-center justify-center rounded-full border-2 bg-gray-200 p-2 transition duration-1000 ease-in-out hover:scale-105 sm:w-full lg:w-full dark:text-black"
+              className="dark:border-orange hover:border-orange m-auto flex w-11/12 cursor-pointer items-center justify-center rounded-full border-2 bg-gray-200 p-2 transition duration-1000 ease-in-out hover:scale-105 sm:w-full md:w-full lg:w-full dark:text-black"
             >
               <span>Download Resume</span>
               <GiClick className="h-4 w-4 lg:w-1/6" />
