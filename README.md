@@ -15,9 +15,10 @@ Portfolio Next app to showcase freelance projects & web development skills
 - Next.js 15 app router 
 - Typescript 5
 - Tailwind CSS 4
-- React Three Fiber
-- Framer Motion
-- NEXT PWA
+- Tanstack Query 5
+- React Three Fiber 9
+- Framer Motion 12
+- NEXT PWA 5
 
 ## <a name="quick-start">⚙️ Quick Start</a>
 
