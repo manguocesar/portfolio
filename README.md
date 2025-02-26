@@ -1,7 +1,25 @@
-# Overview
+## 📋 <a name="table">Table of Contents</a>
+
+1. [Introduction](#introduction)
+2. [Tech Stack](#tech-stack)
+3. [Quick Start](#quick-start)
+4. [Hosting](#hosting)
+5. [Upcoming Features](#upcoming-features)
+
+
+## <a name="introduction">⚙️ Introduction</a>
 Portfolio Next app to showcase freelance projects & web development skills
 
-## To run the app
+## <a name="tech-stack">⚙️ Tech Stack</a>
+
+- Next.js 15 app router 
+- Typescript 5
+- Tailwind CSS 4
+- React Three Fiber
+- Framer Motion
+- NEXT PWA
+
+## <a name="quick-start">⚙️ Quick Start</a>
 
 1.  **Install the dependencies.**
     ```shell
@@ -14,10 +32,11 @@ Portfolio Next app to showcase freelance projects & web development skills
     ```
 Open the browser at http://localhost:3000/
 
-## Additional
+## <a name="hosting">⚙️ Hosting</a>
 Hosted with [Vercel](https://vercel.com/)
+Prod URL cesarhertz.com
 
-## Upcoming features
+## <a name=upcoming-features">⚙️ Upcoming features</a>
 -- loading.js files
 -- mobile first
 -- resume & project route don't reload the whole page
