@@ -1,13 +1,11 @@
-import { FunctionComponent } from 'react';
-
 export interface Service {
-  Icon: FunctionComponent<{ className: string }>;
+  Icon: React.ComponentType<{ className: string }>;
   title: string;
   about: string;
 }
 
 export interface Skill {
-  Icon: FunctionComponent<{ className: string }>;
+  Icon: React.ComponentType<{ className: string }>;
   name: string;
   level: string;
 }
@@ -23,6 +21,7 @@ export interface Project {
 }
 
 export type Category =
+  | 'all'
   | 'react'
   | 'expo'
   | 'graphQL'

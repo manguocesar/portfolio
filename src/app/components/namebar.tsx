@@ -1,8 +1,6 @@
-import { FunctionComponent } from 'react';
-
 import { Skill } from '../types';
 
-export const Bar: FunctionComponent<{ value: Skill }> = ({
+export const Bar: React.ComponentType<{ value: Skill }> = ({
   value: { Icon, level, name },
 }) => {
   const bar_width = `${level}%`;

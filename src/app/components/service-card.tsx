@@ -1,7 +1,6 @@
-import { FunctionComponent } from 'react';
 import { Service } from '../types';
 
-export const ServiceCard: FunctionComponent<{ service: Service }> = ({
+export const ServiceCard: React.ComponentType<{ service: Service }> = ({
   service: { Icon, title, about },
 }) => {
   return (

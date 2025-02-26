@@ -1,3 +1,4 @@
+'use client';
 import { Service } from '../types';
 import { ServiceCard } from './service-card';
 

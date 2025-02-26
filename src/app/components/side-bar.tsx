@@ -1,4 +1,4 @@
-'use server';
+'use client';
 
 import Image from 'next/image';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
@@ -7,7 +7,7 @@ import { GoLocation } from 'react-icons/go';
 import { Wechat } from './wechat';
 import { Button } from './button';
 
-export const Sidebar = async () => {
+export const Sidebar = () => {
   return (
     <div className="shadow-custom-light dark:border-orange dark:bg-dark-500 dark:shadow-custom-dark col-span-12 h-full rounded-2xl border bg-white py-4 text-center text-base lg:col-span-3">
       <div className="m-0">

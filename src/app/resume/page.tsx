@@ -1,6 +1,6 @@
 import React from 'react';
 import { technos, tools } from '../data';
-import Bar from '../components/namebar';
+import { Bar } from '../components/namebar';
 
 const introduction = (
   <p className="hover:text-gray-1000·my-3·transition·duration-1000·ease-in-out">

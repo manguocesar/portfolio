@@ -1,35 +1,28 @@
-import { FunctionComponent } from 'react';
+'use client';
+import { TechNav } from './tech-nav';
 import { Category } from '../types';
 
-export const NavItem: FunctionComponent<{
-  value: Category | 'all';
+interface ProjectsNavbarProps {
   handlerFilterCategory: Function;
   active: string;
-}> = ({ value, handlerFilterCategory, active }) => {
-  let className =
-    'capitalize text-center md:text-left font-semibold cursor-pointer hover:text-orange';
-  if (active === value) className += ' text-orange';
+}
 
-  return (
-    <li className={className} onClick={() => handlerFilterCategory(value)}>
-      {value}
-    </li>
-  );
-};
+const techValues = [
+  'all',
+  'react',
+  'reactNative',
+  'tailwindcss',
+  'nextJS',
+  'CMS',
+  'express'
+];
 
-export const ProjectsNavbar: FunctionComponent<{
-  handlerFilterCategory: Function;
-  active: string;
-}> = props => {
+export const ProjectsNavbar: React.ComponentType<ProjectsNavbarProps> = ({ handlerFilterCategory, active }) => {
   return (
     <div className="grid list-none grid-cols-3 gap-2 overflow-x-auto px-3 py-2 sm:flex sm:space-x-3">
-      <NavItem value="all" {...props} />
-      <NavItem value="react" {...props} />
-      <NavItem value="reactNative" {...props} />
-      <NavItem value="tailwindcss" {...props} />
-      <NavItem value="nextJS" {...props} />
-      <NavItem value="CMS" {...props} />
-      <NavItem value="express" {...props} />
+      {techValues.map(value => (
+        <TechNav key={value} value={value as Category} handlerFilterCategory={handlerFilterCategory} active={active} />
+      ))}
     </div>
   );
 };
