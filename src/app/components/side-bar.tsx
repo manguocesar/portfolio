@@ -34,10 +34,10 @@ export const Sidebar = () => {
               aria-label="Open Cesar's resume"
               href="/assets/2025 CV Cesar HERTZ Software.pdf"
               download="2025 CV Cesar HERTZ Software.pdf"
-              className="dark:border-orange hover:border-orange m-auto flex w-11/12 cursor-pointer items-center justify-center rounded-full border-2 bg-gray-200 p-2 transition duration-1000 ease-in-out hover:scale-105 sm:w-full md:w-full lg:w-full dark:text-black"
+              className="dark:border-gray-700 dark:bg-gray-600 hover:border-orange m-auto flex w-11/12 cursor-pointer items-center justify-center rounded-full border-2 bg-gray-200 p-2 transition duration-1000 ease-in-out hover:scale-105 sm:w-full md:w-full lg:w-full dark:text-black"
             >
-              <span>Download Resume</span>
-              <GiClick className="h-4 w-4 lg:w-1/6" />
+              <span className='dark:text-white'>Download Resume</span>
+              <GiClick className="h-4 w-4 ml-2 lg:w-1/6 dark:text-orange" />
             </a>
           </button>
         </div>
@@ -65,14 +65,14 @@ export const Sidebar = () => {
         </div>
       </div>
 
-      <div className="my-2 bg-gray-200 py-1 md:my-5 md:py-4 dark:text-black">
-        <div className="flex items-center justify-center transition duration-1000 hover:text-white">
+      <div className="my-2 bg-gray-200 dark:bg-gray-700 py-1 md:my-5 md:py-4 dark:text-black">
+        <div className="flex dark:text-white items-center justify-center transition duration-1000 hover:text-white">
           <GoLocation className="mr-2" /> <span>Copenhagen </span>
         </div>
-        <p className="my-2 transition duration-1000 hover:text-white">
+        <p className="my-2 dark:text-white  transition duration-1000 hover:text-white">
           cesar.hertz@icloud.com
         </p>
-        <p className="my-2 transition duration-1000 hover:text-white">
+        <p className="my-2 dark:text-white  transition duration-1000 hover:text-white">
           + 45 31 80 92 75
         </p>
       </div>
