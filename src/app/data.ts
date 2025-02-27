@@ -109,11 +109,10 @@ export const tools: Skill[] = [
 
 export const projects: Project[] = [
   {
-    name: 'Redilink',
+    name: 'Balder',
     description: 'Social network for real estate professionals',
     image_path: '/images/projects/redilink.png',
-    deployed_url:
-      'https://play.google.com/store/apps/details?id=ch.redilink.firstapp&hl=en&gl=US',
+    deployed_url: 'https://balder-app.com/',
     github_url: 'https://github.com/RediLink',
     category: ['reactNative', 'express', 'CMS', 'mongo'],
     key_techs: [
