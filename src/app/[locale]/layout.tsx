@@ -9,7 +9,7 @@ import './styles/globals.css';
 import { Inter } from 'next/font/google';
 
 import type { Metadata, Viewport } from 'next';
-import { DarkMode } from './DarkMode';
+import { DarkMode } from './dark-mode';
 
 const inter = Inter({
   subsets: ['latin'],

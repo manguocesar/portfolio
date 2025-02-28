@@ -6,7 +6,7 @@ import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { getLocale } from 'next-intl/server';
-import { LanguageSwitcher } from './LanguageSwitcher';
+import { LanguageSwitcher } from './language-switcher';
 
 type NavbarProps = {
   active: string;
@@ -19,7 +19,7 @@ const NavItem = ({ active, setActive, name, route }: NavbarProps) => {
   const t = useTranslations('NavBar');
   return (
     <>
-      {active.toLowerCase().includes(name) ? null : (
+      {active.toLowerCase().includes(name) ? undefined : (
         <Link href={route} data-test-id={`cypress-nav-${name}`}>
           <span
             className="hover:text-orange mx-2 cursor-pointer hover:border-b-4"
