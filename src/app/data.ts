@@ -3,7 +3,7 @@ import { BiWorld } from 'react-icons/bi';
 import { FaServer, FaBusinessTime } from 'react-icons/fa';
 import { AiOutlineAntDesign } from 'react-icons/ai';
 import { MdDeveloperMode } from 'react-icons/md';
-import { Project, Service, Skill } from './types';
+import { Project, Service, Skill } from './[locale]/types';
 import { BsCircleFill } from 'react-icons/bs';
 
 export const services: Service[] = [

@@ -1,5 +1,5 @@
 import React from 'react';
-import { technos, tools } from '../data';
+import { technos, tools } from '../../data';
 import { Bar } from '../components/namebar';
 
 const introduction = (

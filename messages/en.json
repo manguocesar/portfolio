@@ -1,0 +1,9 @@
+{
+  "NavBar": {
+    "about": "About",
+    "resume": "Resume",
+    "projects": "Projects",
+    "chinese": "Chinese",
+    "english": "English"
+  }
+}

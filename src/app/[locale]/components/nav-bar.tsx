@@ -1,9 +1,10 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Link from 'next/link';
+import { Link } from '../../../i18n/navigation';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
+import { useTranslations } from 'next-intl';
 
 type NavbarProps = {
   active: string;
@@ -13,15 +14,18 @@ type NavbarProps = {
 };
 
 const NavItem = ({ active, setActive, name, route }: NavbarProps) => {
+  const t = useTranslations('NavBar');
+  console.log(active, name);
+
   return (
     <>
-      {active === name ? undefined : (
+      {active.toLowerCase() === name ? undefined : (
         <Link href={route} data-test-id={`cypress-nav-${name}`}>
           <span
             className="hover:text-orange mx-2 cursor-pointer hover:border-b-4"
             onClick={() => setActive(name)}
           >
-            {name}
+            {t(name.toLowerCase())}
           </span>
         </Link>
       )}
@@ -30,13 +34,17 @@ const NavItem = ({ active, setActive, name, route }: NavbarProps) => {
 };
 
 export const Navbar = () => {
+  const t = useTranslations('NavBar');
   const pathname = usePathname();
-
   const [active, setActive] = useState('');
 
   useEffect(() => {
     switch (pathname) {
-      case '/': {
+      case '/en': {
+        setActive('About');
+        break;
+      }
+      case '/zh': {
         setActive('About');
         break;
       }
@@ -62,23 +70,26 @@ export const Navbar = () => {
       className="my-2 flex items-center justify-between px-5 py-1"
     >
       <span className="border-orange border-b-4 text-xl font-bold md:text-2xl">
-        {active}
+        {t(active.toLowerCase())}
       </span>
 
       <div className="text-base font-normal md:text-xl">
-        <NavItem active={active} setActive={setActive} name="About" route="/" />
+        <NavItem active={active} setActive={setActive} name='about' route="/" />
         <NavItem
           active={active}
           setActive={setActive}
-          name="Resume"
+          name='resume'
           route="/resume"
         />
         <NavItem
           active={active}
           setActive={setActive}
-          name="Projects"
+          name='projects'
           route="/projects"
         />
+
+        {pathname.includes('/en') && <Link href="/" locale="zh">{t('chinese')}</Link>}
+        {pathname.includes('/zh') && <Link href="/" locale="en">{t('english')}</Link>}
       </div>
     </motion.div>
   );
