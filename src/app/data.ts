@@ -3,41 +3,39 @@ import { BiWorld } from 'react-icons/bi';
 import { FaServer, FaBusinessTime } from 'react-icons/fa';
 import { AiOutlineAntDesign } from 'react-icons/ai';
 import { MdDeveloperMode } from 'react-icons/md';
-import { Project, Service, Skill } from './types';
+import { Project, Service, Skill } from './[locale]/types';
 import { BsCircleFill } from 'react-icons/bs';
 
 export const services: Service[] = [
   {
     Icon: MdDeveloperMode,
-    title: 'Web, iOS & Android',
-    about:
-      'SaaS, Ecommerce, Social Media, Admin Dashboards, ... all SEO-friendly & multiplateform',
+    title: 'firstTitle',
+    about: 'firstDetails',
   },
   {
     Icon: RiComputerLine,
-    title: 'Frontend Development',
-    about:
-      'Creating efficient & user-friendly frontends with NextJS & TailwindCSS',
+    title: 'secondTitle',
+    about: 'secondDetails',
   },
   {
     Icon: FaServer,
-    title: 'Backend Development',
-    about: 'Create REST & GraphQL APIs with SQL databases',
+    title: 'thirdTitle',
+    about: 'thirdDetails',
   },
   {
     Icon: FaBusinessTime,
-    title: 'Business skills',
-    about: 'Sales, HR & PM experiences',
+    title: 'fourthTitle',
+    about: 'fourthDetails',
   },
   {
     Icon: AiOutlineAntDesign,
-    title: 'Freelance Coder',
-    about: 'Hourly rate &/or scope based',
+    title: 'fifthTitle',
+    about: 'fifthDetails',
   },
   {
     Icon: BiWorld,
-    title: 'International',
-    about: 'English, French, Chinese & Spanish working communication',
+    title: 'sixthTitle',
+    about: 'sixthDetails',
   },
 ];
 
@@ -109,11 +107,10 @@ export const tools: Skill[] = [
 
 export const projects: Project[] = [
   {
-    name: 'Redilink',
+    name: 'Balder',
     description: 'Social network for real estate professionals',
     image_path: '/images/projects/redilink.png',
-    deployed_url:
-      'https://play.google.com/store/apps/details?id=ch.redilink.firstapp&hl=en&gl=US',
+    deployed_url: 'https://balder-app.com/',
     github_url: 'https://github.com/RediLink',
     category: ['reactNative', 'express', 'CMS', 'mongo'],
     key_techs: [

@@ -6,8 +6,10 @@ import { GiClick, GiTie } from 'react-icons/gi';
 import { GoLocation } from 'react-icons/go';
 import { Wechat } from './wechat';
 import { Button } from './button';
+import { useTranslations } from 'next-intl';
 
 export const Sidebar = () => {
+  const t = useTranslations('SideBar');
   return (
     <div className="shadow-custom-light dark:border-orange dark:bg-dark-500 dark:shadow-custom-dark col-span-12 h-full rounded-2xl border bg-white py-4 text-center text-base lg:col-span-3">
       <div className="m-0">
@@ -25,18 +27,20 @@ export const Sidebar = () => {
               Cesar 何赛
             </span>
           </h3>
-          <p className="hover:text-orange flex items-center justify-center rounded-full text-lg font-bold italic transition duration-1000 ease-in-out md:mb-3 md:px-2">
-            Web Developer
+          <p className="hover:text-orange flex items-center justify-center rounded-full text-lg font-bold italic md:mb-3 md:px-2">
+            {t('webDeveloper')}
             <GiTie className="h-6 w-6" />
           </p>
-          <button className="">
+          <button>
             <a
               aria-label="Open Cesar's resume"
               href="/assets/2025 CV Cesar HERTZ Software.pdf"
               download="2025 CV Cesar HERTZ Software.pdf"
-              className="hover:border-orange m-auto flex w-11/12 cursor-pointer items-center justify-center rounded-full border-2 bg-gray-200 p-2 transition duration-1000 ease-in-out hover:scale-105 sm:w-full md:w-full lg:w-full dark:border-gray-700 dark:bg-gray-600 dark:text-black"
+              className="hover:border-orange m-auto flex w-11/12 cursor-pointer items-center justify-center rounded-full border-2 bg-gray-200 p-2 transition duration-1000 ease-in-out hover:scale-105 sm:w-10/12 lg:w-full dark:border-gray-700 dark:bg-gray-600 dark:text-black dark:transition-none"
             >
-              <span className="dark:text-white">Download Resume</span>
+              <span className="text-sm xl:text-base dark:text-white">
+                {t('downloadResume')}
+              </span>
               <GiClick className="dark:text-orange ml-2 h-4 w-4 lg:w-1/6" />
             </a>
           </button>
@@ -65,19 +69,27 @@ export const Sidebar = () => {
         </div>
       </div>
 
-      <div className="my-2 bg-gray-200 py-1 md:my-5 md:py-4 dark:bg-gray-700 dark:text-black">
-        <div className="flex items-center justify-center transition duration-1000 hover:text-white dark:text-white">
-          <GoLocation className="mr-2" /> <span>Copenhagen </span>
+      <div className="my-2 bg-gray-200 py-1 transition duration-1000 md:my-5 md:py-4 dark:bg-gray-700 dark:text-black dark:transition-none">
+        <div className="flex items-center justify-center hover:text-white dark:text-white">
+          <GoLocation className="mr-2" />
+          <a
+            className="cursor-pointer"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.google.com/maps/place/Stryn%C3%B8gade,+2100+K%C3%B8benhavn/@55.7117251,12.5727325,17z/data=!3m1!4b1!4m6!3m5!1s0x465252f45b355133:0x4c73ec61ccfa8c93!8m2!3d55.7117251!4d12.5753128!16s%2Fg%2F1tsynd1g?entry=ttu&g_ep=EgoyMDI1MDIyNS4wIKXMDSoASAFQAw%3D%3D"
+          >
+            {t('copenhague')}
+          </a>
         </div>
-        <p className="my-2 transition duration-1000 hover:text-white dark:text-white">
-          cesar.hertz@icloud.com
+        <p className="my-2 cursor-pointer hover:text-white dark:text-white">
+          <a href="mailto:cesar.hertz@icloud.com">cesar.hertz@icloud.com</a>
         </p>
-        <p className="my-2 transition duration-1000 hover:text-white dark:text-white">
+        <p className="my-2 hover:text-white dark:text-white">
           + 45 31 80 92 75
         </p>
       </div>
-      <Button title="Email me" />
-      <Button title="Day / Night Theme" />
+      <Button title={t('emailMe')} />
+      <Button title={t('dayNightTheme')} />
     </div>
   );
 };

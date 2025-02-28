@@ -6,6 +6,7 @@ import { useState } from 'react';
 import { AiFillGithub, AiFillProject } from 'react-icons/ai';
 import { MdClose } from 'react-icons/md';
 import { Project } from '../types';
+import { useTranslations } from 'next-intl';
 
 export const ProjectCard: React.ComponentType<{
   project: Project;
@@ -19,6 +20,7 @@ export const ProjectCard: React.ComponentType<{
     key_techs,
   },
 }) => {
+  const t = useTranslations('Project');
   const [showDetail, setShowDetail] = useState(false);
 
   return (
@@ -77,7 +79,7 @@ export const ProjectCard: React.ComponentType<{
                 href={deployed_url}
                 className="hover:border-orange dark:bg-dark-200 flex items-center rounded border-2 bg-gray-200 px-4 py-2 text-xl md:space-x-3"
               >
-                <AiFillProject /> <span>Project</span>
+                <AiFillProject /> <span>{t('project')}</span>
               </a>
             </div>
           </div>

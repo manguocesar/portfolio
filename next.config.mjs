@@ -1,4 +1,5 @@
 import withPWA from 'next-pwa';
+import createNextIntlPlugin from 'next-intl/plugin';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -34,9 +35,13 @@ const nextConfig = {
   },
 };
 
+const withNextIntl = createNextIntlPlugin();
+
+const intlConfig = withNextIntl(nextConfig);
+
 export default withPWA({
   dest: 'public',
   disable: process.env.NODE_ENV === 'development', // disable PWA in the development environment
   register: true, // register the PWA service worker
   skipWaiting: true, // skip waiting for service worker activation
-})(nextConfig);
+})(intlConfig);
