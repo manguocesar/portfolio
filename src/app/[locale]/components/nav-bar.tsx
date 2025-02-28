@@ -4,8 +4,8 @@ import { motion } from 'framer-motion';
 import { Link } from '../../../i18n/navigation';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import { useTranslations, } from 'next-intl';
-import { getLocale } from "next-intl/server";
+import { useTranslations } from 'next-intl';
+import { getLocale } from 'next-intl/server';
 import { LanguageSwitcher } from './LanguageSwitcher';
 
 type NavbarProps = {
@@ -59,7 +59,7 @@ export const Navbar = () => {
       initial={{ x: 20, opacity: 0 }}
       animate={{ x: 0, opacity: 1 }}
       transition={{ ease: 'easeInOut', duration: 0.75 }}
-      className="my-2 flex items-center justify-between px-5 md:pr-1 py-1"
+      className="my-2 flex items-center justify-between px-5 py-1 md:pr-1"
     >
       <span className="border-orange border-b-4 text-xl font-bold md:text-2xl">
         {active.includes('About') && t('about')}

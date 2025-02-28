@@ -25,7 +25,7 @@ export const Sidebar = () => {
               Cesar 何赛
             </span>
           </h3>
-          <p className="hover:text-orange flex items-center justify-center rounded-full text-lg font-bold italic  md:mb-3 md:px-2">
+          <p className="hover:text-orange flex items-center justify-center rounded-full text-lg font-bold italic md:mb-3 md:px-2">
             Web Developer
             <GiTie className="h-6 w-6" />
           </p>
@@ -34,9 +34,11 @@ export const Sidebar = () => {
               aria-label="Open Cesar's resume"
               href="/assets/2025 CV Cesar HERTZ Software.pdf"
               download="2025 CV Cesar HERTZ Software.pdf"
-              className="hover:border-orange m-auto flex w-11/12 cursor-pointer items-center justify-center rounded-full border-2 bg-gray-200 p-2 dark:transition-none transition duration-1000 ease-in-out hover:scale-105 sm:w-10/12 lg:w-full dark:border-gray-700 dark:bg-gray-600 dark:text-black"
+              className="hover:border-orange m-auto flex w-11/12 cursor-pointer items-center justify-center rounded-full border-2 bg-gray-200 p-2 transition duration-1000 ease-in-out hover:scale-105 sm:w-10/12 lg:w-full dark:border-gray-700 dark:bg-gray-600 dark:text-black dark:transition-none"
             >
-              <span className="text-sm xl:text-base dark:text-white">Download Resume</span>
+              <span className="text-sm xl:text-base dark:text-white">
+                Download Resume
+              </span>
               <GiClick className="dark:text-orange ml-2 h-4 w-4 lg:w-1/6" />
             </a>
           </button>
@@ -65,8 +67,8 @@ export const Sidebar = () => {
         </div>
       </div>
 
-      <div className="my-2 bg-gray-200 dark:transition-none transition duration-1000  py-1 md:my-5 md:py-4 dark:bg-gray-700 dark:text-black">
-        <div className="flex items-center justify-center  hover:text-white dark:text-white">
+      <div className="my-2 bg-gray-200 py-1 transition duration-1000 md:my-5 md:py-4 dark:bg-gray-700 dark:text-black dark:transition-none">
+        <div className="flex items-center justify-center hover:text-white dark:text-white">
           <GoLocation className="mr-2" /> <span>Copenhagen </span>
         </div>
         <p className="my-2 hover:text-white dark:text-white">
