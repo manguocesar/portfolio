@@ -74,22 +74,30 @@ export const Navbar = () => {
       </span>
 
       <div className="text-base font-normal md:text-xl">
-        <NavItem active={active} setActive={setActive} name='about' route="/" />
+        <NavItem active={active} setActive={setActive} name="about" route="/" />
         <NavItem
           active={active}
           setActive={setActive}
-          name='resume'
+          name="resume"
           route="/resume"
         />
         <NavItem
           active={active}
           setActive={setActive}
-          name='projects'
+          name="projects"
           route="/projects"
         />
 
-        {pathname.includes('/en') && <Link href="/" locale="zh">{t('chinese')}</Link>}
-        {pathname.includes('/zh') && <Link href="/" locale="en">{t('english')}</Link>}
+        {pathname.includes('/en') && (
+          <Link href="/" locale="zh">
+            {t('chinese')}
+          </Link>
+        )}
+        {pathname.includes('/zh') && (
+          <Link href="/" locale="en">
+            {t('english')}
+          </Link>
+        )}
       </div>
     </motion.div>
   );

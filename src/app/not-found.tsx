@@ -7,11 +7,11 @@ import Error from 'next/error';
 // an invalid value as the `[locale]` param and calls `notFound()`.
 
 export default function GlobalNotFound() {
-    return (
-        <html lang="en">
-            <body>
-                <Error statusCode={404} />;
-            </body>
-        </html>
-    );
+  return (
+    <html lang="en">
+      <body>
+        <Error statusCode={404} />;
+      </body>
+    </html>
+  );
 }

@@ -35,10 +35,7 @@ const nextConfig = {
   },
 };
 
-
-
 const withNextIntl = createNextIntlPlugin();
-
 
 const intlConfig = withNextIntl(nextConfig);
 
