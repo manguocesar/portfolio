@@ -4,7 +4,9 @@ import { motion } from 'framer-motion';
 import { Link } from '../../../i18n/navigation';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations, } from 'next-intl';
+import { getLocale } from "next-intl/server";
+import { LanguageSwitcher } from './LanguageSwitcher';
 
 type NavbarProps = {
   active: string;
@@ -15,11 +17,9 @@ type NavbarProps = {
 
 const NavItem = ({ active, setActive, name, route }: NavbarProps) => {
   const t = useTranslations('NavBar');
-  console.log(active, name);
-
   return (
     <>
-      {active.toLowerCase() === name ? undefined : (
+      {active.toLowerCase().includes(name) ? null : (
         <Link href={route} data-test-id={`cypress-nav-${name}`}>
           <span
             className="hover:text-orange mx-2 cursor-pointer hover:border-b-4"
@@ -36,29 +36,21 @@ const NavItem = ({ active, setActive, name, route }: NavbarProps) => {
 export const Navbar = () => {
   const t = useTranslations('NavBar');
   const pathname = usePathname();
-  const [active, setActive] = useState('');
+  const [active, setActive] = useState(pathname);
 
   useEffect(() => {
-    switch (pathname) {
-      case '/en': {
-        setActive('About');
-        break;
-      }
-      case '/zh': {
-        setActive('About');
-        break;
-      }
-      case '/projects': {
-        setActive('Projects');
-        break;
-      }
-      case '/resume': {
-        {
-          setActive('Resume');
-          // No default
-        }
-        break;
-      }
+    const pathToActiveMap: { [key: string]: string } = {
+      '/en': 'About',
+      '/zh': 'About',
+      'en/projects': 'Projects',
+      'zh/projects': 'Projects',
+      'en/resume': 'Resume',
+      'zh/resume': 'Resume',
+    };
+
+    const activeName = pathToActiveMap[pathname];
+    if (activeName) {
+      setActive(activeName);
     }
   }, [pathname]);
 
@@ -67,10 +59,12 @@ export const Navbar = () => {
       initial={{ x: 20, opacity: 0 }}
       animate={{ x: 0, opacity: 1 }}
       transition={{ ease: 'easeInOut', duration: 0.75 }}
-      className="my-2 flex items-center justify-between px-5 py-1"
+      className="my-2 flex items-center justify-between px-5 md:pr-1 py-1"
     >
       <span className="border-orange border-b-4 text-xl font-bold md:text-2xl">
-        {t(active.toLowerCase())}
+        {active.includes('About') && t('about')}
+        {active.includes('projects') && t('projects')}
+        {active.includes('resume') && t('resume')}
       </span>
 
       <div className="text-base font-normal md:text-xl">
@@ -88,16 +82,7 @@ export const Navbar = () => {
           route="/projects"
         />
 
-        {pathname.includes('/en') && (
-          <Link href="/" locale="zh">
-            {t('chinese')}
-          </Link>
-        )}
-        {pathname.includes('/zh') && (
-          <Link href="/" locale="en">
-            {t('english')}
-          </Link>
-        )}
+        <LanguageSwitcher pathname={pathname} />
       </div>
     </motion.div>
   );

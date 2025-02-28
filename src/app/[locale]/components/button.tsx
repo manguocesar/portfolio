@@ -7,6 +7,15 @@ const changeTheme = async () => {
 };
 
 export const Button = ({ title }: { title: string }) => {
+
+  const isDark = document.documentElement.classList.contains('dark')
+
+  setTimeout(() => {
+    if (isDark) {
+      document.documentElement.classList.add('dark')
+    }
+  }, 50)
+
   return (
     <button
       onClick={() => {
