@@ -8,5 +8,5 @@ export const AboutIntro = () => {
       {t('second')}
       {t('third')}
     </h3>
-  )
-}
+  );
+};

@@ -13,13 +13,9 @@ const Page = () => {
             {t('education')}
           </h5>
           <div className="">
-            <h5 className="my-2 text-xl font-bold">
-              {t('master')}
-            </h5>
+            <h5 className="my-2 text-xl font-bold">{t('master')}</h5>
             <p className="font-semibold">{t('masterDetails')}</p>
-            <p className="sm:my-3">
-              {t('thesis')}
-            </p>
+            <p className="sm:my-3">{t('thesis')}</p>
           </div>
         </div>
         <div className="col-span-5 hidden sm:block">

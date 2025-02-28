@@ -72,15 +72,17 @@ export const Sidebar = () => {
       <div className="my-2 bg-gray-200 py-1 transition duration-1000 md:my-5 md:py-4 dark:bg-gray-700 dark:text-black dark:transition-none">
         <div className="flex items-center justify-center hover:text-white dark:text-white">
           <GoLocation className="mr-2" />
-          <a className='cursor-pointer' target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/place/Stryn%C3%B8gade,+2100+K%C3%B8benhavn/@55.7117251,12.5727325,17z/data=!3m1!4b1!4m6!3m5!1s0x465252f45b355133:0x4c73ec61ccfa8c93!8m2!3d55.7117251!4d12.5753128!16s%2Fg%2F1tsynd1g?entry=ttu&g_ep=EgoyMDI1MDIyNS4wIKXMDSoASAFQAw%3D%3D">
+          <a
+            className="cursor-pointer"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.google.com/maps/place/Stryn%C3%B8gade,+2100+K%C3%B8benhavn/@55.7117251,12.5727325,17z/data=!3m1!4b1!4m6!3m5!1s0x465252f45b355133:0x4c73ec61ccfa8c93!8m2!3d55.7117251!4d12.5753128!16s%2Fg%2F1tsynd1g?entry=ttu&g_ep=EgoyMDI1MDIyNS4wIKXMDSoASAFQAw%3D%3D"
+          >
             {t('copenhague')}
           </a>
-
         </div>
-        <p className="my-2 hover:text-white dark:text-white cursor-pointer">
-          <a href="mailto:cesar.hertz@icloud.com">
-            cesar.hertz@icloud.com
-          </a>
+        <p className="my-2 cursor-pointer hover:text-white dark:text-white">
+          <a href="mailto:cesar.hertz@icloud.com">cesar.hertz@icloud.com</a>
         </p>
         <p className="my-2 hover:text-white dark:text-white">
           + 45 31 80 92 75
