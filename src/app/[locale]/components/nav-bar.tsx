@@ -5,7 +5,6 @@ import { Link } from '../../../i18n/navigation';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { useTranslations } from 'next-intl';
-import { getLocale } from 'next-intl/server';
 import { LanguageSwitcher } from './language-switcher';
 
 type NavbarProps = {

@@ -5,5 +5,44 @@
     "projects": "Projects",
     "chinese": "Chinese",
     "english": "English"
+  },
+  "SideBar": {
+    "webDeveloper": "Web Developer",
+    "downloadResume": "Download Resume",
+    "copenhague": "Copenhagen",
+    "emailMe": "Email Me",
+    "dayNightTheme": "Day/Night Theme"
+  },
+  "About": {
+    "first": "With 6 years of experience in the web industry across Europe and China, I specialize in developing innovative, user-centric solutions.",
+    "second": "I excel in managing end-to-end tech projects with a focus on agile methodologies and close stakeholder collaboration. My extensive experience with the MERN stack, coupled with exposure to diverse architectures and design patterns, enables me to deliver robust solutions.",
+    "third": "I am particularly passionate about projects that drive positive impact and demonstrate strong growth potential.",
+    "whatido": "What I Do:",
+    "firstTitle": "Web、iOS & Android",
+    "firstDetails": "SaaS, Ecommerce, Social Media, Admin Dashboards, ... all SEO-friendly & multiplateform",
+    "secondTitle": "Frontend Development",
+    "secondDetails": "Creating efficient & user-friendly frontends with NextJS & TailwindCSS",
+    "thirdTitle": "Backend Development",
+    "thirdDetails": "Create REST & GraphQL APIs with SQL databases",
+    "fourthTitle": "Business skills",
+    "fourthDetails": "Sales, HR & PM experiences in Europe & China",
+    "fifthTitle": "Freelance Coder",
+    "fifthDetails": "Hourly rate &/or scope based projects",
+    "sixthTitle": "International",
+    "sixthDetails": "English, French, Chinese & Spanish working communication"
+  },
+  "Resume": {
+    "education": "Education",
+    "master": "Master of Entrepreneurship & Development",
+    "masterDetails": "Coventry University 2016 | 2018",
+    "thesis": "Thesis: How to lead digital transformation through KPIs?",
+    "softwareDeveloper": "Software Developer",
+    "first": "First for 2 years in Brussels then 4 years in Shanghai as a software engineer, these diverse tech hubs have exposed me to innovative approaches and best practices in software development.",
+    "second": "These vibrant digital communities shaped my expertise in modern web technologies.",
+    "technos": "Technos:",
+    "tools": "Tools & Softwares:"
+  },
+  "Project": {
+    "project": "Project"
   }
 }

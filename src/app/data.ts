@@ -9,35 +9,33 @@ import { BsCircleFill } from 'react-icons/bs';
 export const services: Service[] = [
   {
     Icon: MdDeveloperMode,
-    title: 'Web, iOS & Android',
-    about:
-      'SaaS, Ecommerce, Social Media, Admin Dashboards, ... all SEO-friendly & multiplateform',
+    title: 'firstTitle',
+    about: 'firstDetails',
   },
   {
     Icon: RiComputerLine,
-    title: 'Frontend Development',
-    about:
-      'Creating efficient & user-friendly frontends with NextJS & TailwindCSS',
+    title: 'secondTitle',
+    about: 'secondDetails',
   },
   {
     Icon: FaServer,
-    title: 'Backend Development',
-    about: 'Create REST & GraphQL APIs with SQL databases',
+    title: 'thirdTitle',
+    about: 'thirdDetails',
   },
   {
     Icon: FaBusinessTime,
-    title: 'Business skills',
-    about: 'Sales, HR & PM experiences',
+    title: 'fourthTitle',
+    about: 'fourthDetails',
   },
   {
     Icon: AiOutlineAntDesign,
-    title: 'Freelance Coder',
-    about: 'Hourly rate &/or scope based',
+    title: 'fifthTitle',
+    about: 'fifthDetails',
   },
   {
     Icon: BiWorld,
-    title: 'International',
-    about: 'English, French, Chinese & Spanish working communication',
+    title: 'sixthTitle',
+    about: 'sixthDetails',
   },
 ];
 

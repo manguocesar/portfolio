@@ -5,5 +5,44 @@
     "projects": "项目",
     "chinese": "中文",
     "english": "英语"
+  },
+  "SideBar": {
+    "webDeveloper": "网络开发者",
+    "downloadResume": "下载简历",
+    "copenhague": "哥本哈根",
+    "emailMe": "发送邮件",
+    "dayNightTheme": "日夜风格"
+  },
+  "About": {
+    "first": "我在欧洲和中国的网络行业拥有 6 年的经验，擅长开发创新的以用户为中心的解决方案。",
+    "second": "我擅长管理端到端技术项目，注重敏捷方法和与利益相关者的密切合作。我在 MERN 堆栈方面拥有丰富的经验，并且了解各种架构和设计模式，这使我能够提供可靠的解决方案。",
+    "third": "我尤其热衷于推动积极影响并展示强大增长潜力的项目。",
+    "whatido": "我能做什么:",
+    "firstTitle": "网站、苹果 和 安卓",
+    "firstDetails": "SaaS、电子商务、社交媒体、管理仪表板......全部 SEO 友好且多平台",
+    "secondTitle": "前端开发工程师",
+    "secondDetails": "使用 NextJS 和 TailwindCSS 创建高效且用户友好的前端",
+    "thirdTitle": "后端开发工程师",
+    "thirdDetails": "使用 SQL 数据库创建 REST 和 GraphQL API",
+    "fourthTitle": "商业技能",
+    "fourthDetails": "在欧洲和中国的销售、HR 和项目管理经验",
+    "fifthTitle": "自由职业程序员",
+    "fifthDetails": "按小时收费或根据项目范围收费",
+    "sixthTitle": "国际",
+    "sixthDetails": "英语、法语、中文和西班牙语的工作交流"
+  },
+  "Resume": {
+    "education": "教育背景",
+    "master": "创业与发展硕士",
+    "masterDetails": "考文垂大学 2016 | 2018",
+    "thesis": "论文：如何通过 KPI 领导数字化转型？",
+    "softwareDeveloper": "软件开发工程师",
+    "first": "我在布鲁塞尔工作了 2 年，然后在上海工作了 4 年，担任软件工程师，这些多元化的技术中心让我接触到了软件开发领域的创新方法和最佳实践。",
+    "second": "这些充满活力的数字社区塑造了我在现代网络技术方面的专业知识。",
+    "technos": "技术:",
+    "tools": "工具和软件:"
+  },
+  "Project": {
+    "project": "项目"
   }
 }
