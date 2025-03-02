@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { MotionWrapper } from '../components/MotionWrapper';
 import { Link } from '../../../i18n/navigation';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
@@ -54,7 +54,7 @@ export const Navbar = () => {
   }, [pathname]);
 
   return (
-    <motion.div
+    <MotionWrapper.div
       initial={{ x: 20, opacity: 0 }}
       animate={{ x: 0, opacity: 1 }}
       transition={{ ease: 'easeInOut', duration: 0.75 }}
@@ -83,6 +83,6 @@ export const Navbar = () => {
 
         <LanguageSwitcher pathname={pathname} />
       </div>
-    </motion.div>
+    </MotionWrapper.div>
   );
 };
