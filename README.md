@@ -27,21 +27,22 @@ Portfolio Next app to showcase freelance projects & web development skills.
 
 1. **Install the dependencies.**
 
-    ```shell
-    pnpm install
-    ```
+   ```shell
+   pnpm install
+   ```
 
 2. **Run the app locally.**
 
-    ```shell
-    pnpm run dev
-    ```
+   ```shell
+   pnpm run dev
+   ```
 
-    Open the browser at [http://localhost:3000/](http://localhost:3000/)
+   Open the browser at [http://localhost:3000/](http://localhost:3000/)
 
 ## ⚙️ <a name="hosting">Hosting</a>
 
-Hosted with [Vercel](https://vercel.com/). Production URL: [cesarhertz.com](https://cesarhertz.com)
+Hosted with [Vercel](https://vercel.com/). Production URL:
+[cesarhertz.com](https://cesarhertz.com)
 
 ## ⚙️ <a name="upcoming-features">Upcoming Features</a>
 
@@ -64,7 +65,8 @@ Hosted with [Vercel](https://vercel.com/). Production URL: [cesarhertz.com](http
 
 ## 🤝 <a name="contributing">Contributing</a>
 
-Contributions are welcome! Please open an issue or submit a pull request for any changes.
+Contributions are welcome! Please open an issue or submit a pull request for any
+changes.
 
 ## 📫 <a name="contact">Contact</a>
 
