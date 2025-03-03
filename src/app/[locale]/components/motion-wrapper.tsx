@@ -1,5 +1,5 @@
-import { m } from 'framer-motion';
+import { motion } from 'framer-motion';
 
-const MotionWrapper = m;
+const MotionWrapper = motion;
 
 export { MotionWrapper };

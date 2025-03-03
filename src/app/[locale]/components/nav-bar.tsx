@@ -1,6 +1,6 @@
 'use client';
 
-import { MotionWrapper } from './motion-wrapper';
+import { MotionWrapper } from '../components/motion-wrapper';
 import { Link } from '../../../i18n/navigation';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
